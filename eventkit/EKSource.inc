@@ -1,0 +1,21 @@
+{ Parsed from EventKit.framework (MacOSX10.10) EKSource.h }
+{ Created on Sun Mar 8 1:45:58 2015 }
+
+
+{$ifdef TYPES}
+type
+  EKSourcePtr = ^EKSource;
+{$endif}
+
+{$ifdef CLASSES}
+
+type
+  EKSource = objcclass external (EKObject)
+  public
+    function sourceIdentifier: NSString; message 'sourceIdentifier';
+    function sourceType: EKSourceType; message 'sourceType';
+    function title: NSString; message 'title';
+    function calendarsForEntityType (entityType: EKEntityType): NSSet; message 'calendarsForEntityType:'; { available starting in __MAC_10_8,__IPHONE_6_0 }
+  end;
+{$endif}
+

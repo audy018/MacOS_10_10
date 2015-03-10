@@ -1,0 +1,9 @@
+{$define FRAMEWORK_LOADED_COREMEDIAIO}
+{$include CMIOHardware.inc}
+{$include CMIOHardwareControl.inc}
+{$include CMIOHardwareDevice.inc}
+{$include CMIOHardwareObject.inc}
+{$include CMIOHardwarePlugIn.inc}
+{$include CMIOHardwareStream.inc}
+{$include CMIOHardwareSystem.inc}
+{$include CMIOSampleBuffer.inc}

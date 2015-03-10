@@ -1,0 +1,23 @@
+{ Parsed from PDFKit.framework (MacOSX10.10) PDFAnnotationStamp.h }
+{ Created on Sun Mar 8 1:47:48 2015 }
+
+
+{$ifdef TYPES}
+type
+  PDFAnnotationStampPtr = ^PDFAnnotationStamp;
+{$endif}
+
+{$if (MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5)}
+{$ifdef CLASSES}
+
+type
+  PDFAnnotationStamp = objcclass external (PDFAnnotation, NSCopyingProtocol)
+  private
+    _pdfPriv2: PDFAnnotationStampPrivateVars;
+  public
+    function name: NSString; message 'name';
+    procedure setName (name_: NSString); message 'setName:';
+  end;
+{$endif}
+
+{$endif}

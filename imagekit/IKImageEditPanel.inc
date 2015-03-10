@@ -1,0 +1,43 @@
+{ Parsed from ImageKit.framework (MacOSX10.10) IKImageEditPanel.h }
+{ Created on Sun Mar 8 1:47:45 2015 }
+
+
+{$ifdef TYPES}
+type
+  IKImageEditPanelPtr = ^IKImageEditPanel;
+  IKImageEditPanelDataSourceProtocolPtr = ^IKImageEditPanelDataSourceProtocol;
+{$endif}
+
+{$if (MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5)}
+{$ifdef PROTOCOLS}
+
+type
+  IKImageEditPanelDataSourceProtocol = objcprotocol external name 'IKImageEditPanelDataSource'
+  required
+    function image: CGImageRef; message 'image';
+    procedure setImage_imageProperties (image_: CGImageRef; metaData: NSDictionary); message 'setImage:imageProperties:';
+  optional
+    function thumbnailWithMaximumSize (size: NSSize): CGImageRef; message 'thumbnailWithMaximumSize:';
+    function imageProperties: NSDictionary; message 'imageProperties';
+    function hasAdjustMode: boolean; message 'hasAdjustMode';
+    function hasEffectsMode: boolean; message 'hasEffectsMode';
+    function hasDetailsMode: boolean; message 'hasDetailsMode';
+  end;
+{$endif}
+
+{$ifdef CLASSES}
+
+type
+  IKImageEditPanel = objcclass external (NSPanel)
+  private
+    _privateData: pointer;
+  public
+    procedure setDataSource(newValue: IKImageEditPanelDataSourceProtocol); message 'setDataSource:';
+    function dataSource: IKImageEditPanelDataSourceProtocol; message 'dataSource';
+    function filterArray: NSArray; message 'filterArray';
+    class function sharedImageEditPanel: IKImageEditPanel; message 'sharedImageEditPanel';
+    procedure reloadData; message 'reloadData';
+  end;
+{$endif}
+
+{$endif}

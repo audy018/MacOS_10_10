@@ -1,0 +1,42 @@
+{ Parsed from CalendarStore.framework (MacOSX10.10) CalTask.h }
+{ Created on Sun Mar 8 1:47:31 2015 }
+
+
+{$ifdef TYPES}
+type
+  CalTaskPtr = ^CalTask;
+{$endif}
+
+{$ifdef TYPES}
+const
+  CalPriorityNone = 0;
+  CalPriorityHigh = 1;
+  CalPriorityMedium = 5;
+  CalPriorityLow = 9;
+
+type
+  CalPriority = NSUInteger;
+  CalPriorityPtr = ^CalPriority;
+{$endif}
+
+{$ifdef CLASSES}
+
+type
+  CalTask = objcclass external (CalCalendarItem)
+  private
+    _dueDate: NSDate;
+    _priority: CalPriority;
+    _completedDate: NSDate;
+  public
+    class function task: id; message 'task';
+    procedure setDueDate(newValue: NSDate); message 'setDueDate:';
+    function dueDate: NSDate; message 'dueDate';
+    procedure setPriority(newValue: CalPriority); message 'setPriority:';
+    function priority: CalPriority; message 'priority';
+    procedure setIsCompleted(newValue: boolean); message 'setIsCompleted:';
+    function isCompleted: boolean; message 'isCompleted';
+    procedure setCompletedDate(newValue: NSDate); message 'setCompletedDate:';
+    function completedDate: NSDate; message 'completedDate';
+  end;
+{$endif}
+
