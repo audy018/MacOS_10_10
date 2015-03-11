@@ -64,7 +64,7 @@ type
   public
     class procedure setUsesUserKeyEquivalents (flag: boolean); message 'setUsesUserKeyEquivalents:';
     class function usesUserKeyEquivalents: boolean; message 'usesUserKeyEquivalents';
-    class function classSeparatorItem: NSMenuItem; message 'separatorItem';
+    class function separatorItem: NSMenuItem; message 'separatorItem';
     function initWithTitle_action_keyEquivalent (aString: NSString; aSelector: SEL; charCode: NSString): instancetype; message 'initWithTitle:action:keyEquivalent:';
     procedure setMenu(newValue: NSMenu); message 'setMenu:';
     function menu: NSMenu; message 'menu';

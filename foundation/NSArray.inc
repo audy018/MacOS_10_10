@@ -108,8 +108,8 @@ type
     function initWithArray_copyItems (array__: NSArray; flag: boolean): instancetype; message 'initWithArray:copyItems:';
     class function arrayWithContentsOfFile (path: NSString): NSArray; message 'arrayWithContentsOfFile:';
     class function arrayWithContentsOfURL (url: NSURL): NSArray; message 'arrayWithContentsOfURL:';
-    function initWithContentsOfFile (path: NSString): NSArray; message 'initWithContentsOfFile:';
-    function initWithContentsOfURL (url: NSURL): NSArray; message 'initWithContentsOfURL:';
+    function initWithContentsOfFile (path: NSString): instancetype; message 'initWithContentsOfFile:';
+    function initWithContentsOfURL (url: NSURL): instancetype; message 'initWithContentsOfURL:';
   end;
 
 type

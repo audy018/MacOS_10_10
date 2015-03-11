@@ -253,7 +253,11 @@ type
     function canDrawConcurrently: boolean; message 'canDrawConcurrently';
     function canDraw: boolean; message 'canDraw';
     procedure setNeedsDisplayInRect (invalidRect: NSRect); message 'setNeedsDisplayInRect:';
-    procedure setNeedsDisplay(newValue: boolean); message 'setNeedsDisplay:';
+		{$ifdef LEGACY_SETNEEDSDISPLAY}
+		procedure setNeedsDisplay_(newValue: boolean); message 'setNeedsDisplay:';
+ 		{$else}
+ 		procedure setNeedsDisplay(newValue: boolean); message 'setNeedsDisplay:';
+		{$endif}
     function needsDisplay: boolean; message 'needsDisplay';
     procedure lockFocus; message 'lockFocus';
     procedure unlockFocus; message 'unlockFocus';

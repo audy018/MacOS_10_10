@@ -159,7 +159,9 @@ type
     procedure setCell (aCell: NSCell); message 'setCell:';
     function selectedCell: id; message 'selectedCell';
     function selectedTag: NSInteger; message 'selectedTag';
-    procedure setNeedsDisplay_; message 'setNeedsDisplay';
+		{$ifndef LEGACY_SETNEEDSDISPLAY}
+		procedure setNeedsDisplay_; message 'setNeedsDisplay';
+		{$endif}
     procedure calcSize; message 'calcSize';
     procedure updateCell (aCell: NSCell); message 'updateCell:';
     procedure updateCellInside (aCell: NSCell); message 'updateCellInside:';

@@ -2,9 +2,9 @@
 { Created on Sun Mar 8 1:49:14 2015 }
 
 {$ifdef TYPES}
-type
-  NSZone = OpaqueType;
-  NSZonePtr = ^NSZone;
+//type
+//  NSZone = OpaqueType;
+//	NSZonePtr = ^NSZone;
 {$endif}
 
 {$ifdef FUNCTIONS}

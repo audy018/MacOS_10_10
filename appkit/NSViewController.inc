@@ -34,7 +34,7 @@ type
     _nibBundle: NSBundle;
     _representedObject: id;
     _title: NSString;
-    view: NSView;
+    _view: NSView;
     _topLevelObjects: NSArray;
     _editors: NSPointerArray;
     _autounbinder: id;
@@ -61,7 +61,7 @@ type
     procedure setTitle(newValue: NSString); message 'setTitle:';
     function title: NSString; message 'title';
     procedure setView(newValue: NSView); message 'setView:';
-    function view_: NSView; message 'view';
+    function view: NSView; message 'view';
     procedure loadView; message 'loadView';
     procedure commitEditingWithDelegate_didCommitSelector_contextInfo (delegate: id; didCommitSelector: SEL; contextInfo: pointer); message 'commitEditingWithDelegate:didCommitSelector:contextInfo:';
     function commitEditing: boolean; message 'commitEditing';

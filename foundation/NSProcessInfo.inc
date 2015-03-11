@@ -32,16 +32,16 @@ type
 type
   NSProcessInfo = objcclass external (NSObject)
   private
-    environment: NSDictionary;
-    arguments: NSArray;
-    hostName: NSString;
+    environment_: NSDictionary;
+    arguments_: NSArray;
+    hostName_: NSString;
     name: NSString;
     automaticTerminationOptOutCounter: NSInteger;
   public
     class function processInfo: NSProcessInfo; message 'processInfo';
-    function environment_: NSDictionary; message 'environment';
-    function arguments_: NSArray; message 'arguments';
-    function hostName_: NSString; message 'hostName';
+    function environment: NSDictionary; message 'environment';
+    function arguments: NSArray; message 'arguments';
+    function hostName: NSString; message 'hostName';
     procedure setProcessName(newValue: NSString); message 'setProcessName:';
     function processName: NSString; message 'processName';
     function processIdentifier: cint; message 'processIdentifier';

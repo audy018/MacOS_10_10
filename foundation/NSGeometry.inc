@@ -7,15 +7,12 @@ type
   NSPoint = CGPoint;
   NSPointPtr = ^NSPoint;
   NSPointPointer = ^NSPoint;
-  NSPointArray = ^NSPoint;
   NSSize = CGSize;
   NSSizePtr = ^NSSize;
   NSSizePointer = ^NSSize;
-  NSSizeArray = ^NSSize;
   NSRect = CGRect;
   NSRectPtr = ^NSRect;
   NSRectPointer = ^NSRect;
-  NSRectArray = ^NSRect;
 
 const
   NSMinXEdge = CGRectMinXEdge;
@@ -47,7 +44,6 @@ type
 
 type
   NSPointPointer = ^NSPoint;
-  NSPointArray = ^NSPoint;
 
 type
   _NSSize = record
@@ -63,7 +59,6 @@ type
 
 type
   NSSizePointer = ^NSSize;
-  NSSizeArray = ^NSSize;
 
 type
   _NSRect = record
@@ -79,7 +74,6 @@ type
 
 type
   NSRectPointer = ^NSRect;
-  NSRectArray = ^NSRect;
 
 const
   NSMinXEdge = 0;
@@ -93,6 +87,17 @@ type
 {$endif}
 
 {$endif}
+
+{$ifdef TYPES}
+type
+	TNSPointArray = array[word] of NSPoint;
+	NSPointArray = ^TNSPointArray;
+	TNSSizeArray = array[word] of NSSize;
+	NSSizeArray = ^TNSSizeArray;
+	TNSRectArray = array[word] of NSRect;
+	NSRectArray = ^TNSRectArray;
+{$endif}
+
 {$ifdef TYPES}
 {$define NSEDGEINSETS_DEFINED}
 

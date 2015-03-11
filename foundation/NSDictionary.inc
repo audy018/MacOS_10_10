@@ -88,8 +88,8 @@ type
     function initWithObjects_forKeys (objects: NSArray; keys: NSArray): instancetype; message 'initWithObjects:forKeys:';
     class function dictionaryWithContentsOfFile (path: NSString): NSDictionary; message 'dictionaryWithContentsOfFile:';
     class function dictionaryWithContentsOfURL (url: NSURL): NSDictionary; message 'dictionaryWithContentsOfURL:';
-    function initWithContentsOfFile (path: NSString): NSDictionary; message 'initWithContentsOfFile:';
-    function initWithContentsOfURL (url: NSURL): NSDictionary; message 'initWithContentsOfURL:';
+    function initWithContentsOfFile (path: NSString): instancetype; message 'initWithContentsOfFile:';
+    function initWithContentsOfURL (url: NSURL): instancetype; message 'initWithContentsOfURL:';
   end;
 
 
