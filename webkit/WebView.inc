@@ -176,7 +176,7 @@ type
 
 type
   WebViewEditingActions = objccategory external (WebView)
-    procedure copy (sender: id); message 'copy:';
+    procedure copy_ (sender: id); message 'copy:';
     procedure cut (sender: id); message 'cut:';
     procedure paste (sender: id); message 'paste:';
     procedure copyFont (sender: id); message 'copyFont:';

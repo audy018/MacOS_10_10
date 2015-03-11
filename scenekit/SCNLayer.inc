@@ -18,6 +18,8 @@ type
     function scene: SCNScene; message 'scene';
 
     { Adopted protocols }
+    procedure setDelegate(newValue: SCNSceneRendererDelegateProtocol); message 'setDelegate:';
+    function delegate: SCNSceneRendererDelegateProtocol; message 'delegate';
     procedure setAutoenablesDefaultLighting(newValue: boolean); message 'setAutoenablesDefaultLighting:';
     function autoenablesDefaultLighting: boolean; message 'autoenablesDefaultLighting';
     function context: pointer; message 'context';

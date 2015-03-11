@@ -18,9 +18,9 @@ type
     _reserved5: clong;
     _reserved6: clong;
   public
-    function outputDeviceUniqueID AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'outputDeviceUniqueID AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function outputDeviceUniqueID: NSString; message 'outputDeviceUniqueID';
     procedure setOutputDeviceUniqueID (uniqueID: NSString); message 'setOutputDeviceUniqueID:';
-    function volume AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: single; message 'volume AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function volume: single; message 'volume';
     procedure setVolume (volume: single); message 'setVolume:';
   end;
 {$endif}

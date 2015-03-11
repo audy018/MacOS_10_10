@@ -19,15 +19,15 @@ type
     _reserved2: clong;
     _reserved3: clong;
   public
-    function inputs AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'inputs AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function inputs: NSArray; message 'inputs';
     function addInput_error (input: QTCaptureInput; errorPtr: NSErrorPtr): boolean; message 'addInput:error:';
     procedure removeInput (input: QTCaptureInput); message 'removeInput:';
-    function outputs AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'outputs AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function outputs: NSArray; message 'outputs';
     function addOutput_error (output: QTCaptureOutput; errorPtr: NSErrorPtr): boolean; message 'addOutput:error:';
     procedure removeOutput (output: QTCaptureOutput); message 'removeOutput:';
-    function isRunning AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isRunning AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure startRunning AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'startRunning AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure stopRunning AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'stopRunning AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isRunning: boolean; message 'isRunning';
+    procedure startRunning; message 'startRunning';
+    procedure stopRunning; message 'stopRunning';
   end;
 {$endif}
 

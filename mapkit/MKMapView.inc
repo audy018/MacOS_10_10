@@ -46,7 +46,7 @@ const
 {$ifdef CLASSES}
 
 type
-  MKMapView = objcclass external (UIView, NSCodingProtocol)
+  MKMapView = objcclass external (NSView, NSCodingProtocol)
   public
     procedure setDelegate(newValue: MKMapViewDelegateProtocol); message 'setDelegate:';
     function delegate: MKMapViewDelegateProtocol; message 'delegate';

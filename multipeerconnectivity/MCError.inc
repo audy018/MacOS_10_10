@@ -3,7 +3,7 @@
 
 {$ifdef EXTERNAL_SYMBOLS}
 var
-  MCErrorDomain: _WEAK NSStringPtr; cvar; external;
+  MCErrorDomain: NSStringPtr; cvar; external;
 {$endif}
 
 {$ifdef TYPES}

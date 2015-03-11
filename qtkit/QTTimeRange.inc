@@ -16,7 +16,7 @@ type
 type
   NSValueQTTimeRangeExtensions = objccategory external (NSValue)
     class function valueWithQTTimeRange (range: QTTimeRange): NSValue; message 'valueWithQTTimeRange:';
-    function QTTimeRangeValue AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTimeRange; message 'QTTimeRangeValue AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function QTTimeRangeValue: QTTimeRange; message 'QTTimeRangeValue';
   end;
 
 type

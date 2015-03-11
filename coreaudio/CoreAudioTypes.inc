@@ -78,10 +78,6 @@ type
     {$endif}
   end;
 type
-  private:AudioBufferList(AudioBufferList&) = AudioBufferList;
-type
-  private:AudioBufferList(AudioBufferList&)Ptr = ^AudioBufferList;
-type
   AudioBufferListPtr = ^AudioBufferList;
 {$endif}
 
@@ -201,14 +197,10 @@ const
   {$endif}
   {$if  not defined(CA_PREFER_FIXED_POINT)}
   kAudioFormatFlagsCanonical = 1;
-  CA_CANONICAL_DEPRECATED = kAudioFormatFlagIsFloat + kAudioFormatFlagsNativeEndian + kAudioFormatFlagIsPacked;
   kAudioFormatFlagsAudioUnitCanonical = 2;
-  CA_CANONICAL_DEPRECATED = kAudioFormatFlagIsFloat + kAudioFormatFlagsNativeEndian + kAudioFormatFlagIsPacked + kAudioFormatFlagIsNonInterleaved;
   {$else}
   kAudioFormatFlagsCanonical = 3;
-  CA_CANONICAL_DEPRECATED = kAudioFormatFlagIsSignedInteger + kAudioFormatFlagsNativeEndian + kAudioFormatFlagIsPacked;
   kAudioFormatFlagsAudioUnitCanonical = 4;
-  CA_CANONICAL_DEPRECATED = kAudioFormatFlagIsSignedInteger + kAudioFormatFlagsNativeEndian + kAudioFormatFlagIsPacked + kAudioFormatFlagIsNonInterleaved + (kAudioUnitSampleFractionBits shl kLinearPCMFormatFlagsSampleFractionShift);
   {$endif}
   kAudioFormatFlagsNativeFloatPacked = kAudioFormatFlagIsFloat + kAudioFormatFlagsNativeEndian + kAudioFormatFlagIsPacked;
 {$endif}
@@ -319,10 +311,6 @@ type
     AudioChannelLayout&)_: AudioChannelLayout& operator=(;
     {$endif}
   end;
-type
-  private:AudioChannelLayout(AudioChannelLayout&) = AudioChannelLayout;
-type
-  private:AudioChannelLayout(AudioChannelLayout&)Ptr = ^AudioChannelLayout;
 type
   AudioChannelLayoutPtr = ^AudioChannelLayout;
 

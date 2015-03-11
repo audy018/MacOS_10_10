@@ -40,18 +40,18 @@ type
     class function trackWithQuickTimeTrack_error (track_: Track; errorPtr: NSErrorPtr): id; message 'trackWithQuickTimeTrack:error:';
     function initWithQuickTimeTrack_error (track_: Track; errorPtr: NSErrorPtr): id; message 'initWithQuickTimeTrack:error:';
     {$endif}
-    function movie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTMovie; message 'movie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function media AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTMedia; message 'media AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function isEnabled AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isEnabled AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function movie: QTMovie; message 'movie';
+    function media: QTMedia; message 'media';
+    function isEnabled: boolean; message 'isEnabled';
     procedure setEnabled (enabled: boolean); message 'setEnabled:';
-    function volume AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: single; message 'volume AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function volume: single; message 'volume';
     procedure setVolume (volume: single); message 'setVolume:';
-    function trackAttributes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSDictionary; message 'trackAttributes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function trackAttributes: NSDictionary; message 'trackAttributes';
     procedure setTrackAttributes (attributes: NSDictionary); message 'setTrackAttributes:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';
     procedure setAttribute_forKey (value: id; attributeKey: NSString); message 'setAttribute:forKey:';
     {$if  not defined(__LP64__)}
-    function quickTimeTrack AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: Track; message 'quickTimeTrack AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function quickTimeTrack: Track; message 'quickTimeTrack';
     {$endif}
     procedure insertSegmentOfTrack_timeRange_atTime (track: QTTrack; range: QTTimeRange; time: QTTime); message 'insertSegmentOfTrack:timeRange:atTime:';
     procedure insertSegmentOfTrack_fromRange_scaledToRange (track: QTTrack; srcRange: QTTimeRange; dstRange: QTTimeRange); message 'insertSegmentOfTrack:fromRange:scaledToRange:';
@@ -67,8 +67,8 @@ type
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
     function apertureModeDimensionsForMode (mode: NSString): NSSize; message 'apertureModeDimensionsForMode:';
     procedure setApertureModeDimensions_forMode (dimensions: NSSize; mode: NSString); message 'setApertureModeDimensions:forMode:';
-    procedure generateApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'generateApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure removeApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'removeApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    procedure generateApertureModeDimensions; message 'generateApertureModeDimensions';
+    procedure removeApertureModeDimensions; message 'removeApertureModeDimensions';
     {$endif}
     {$if ((defined(MAC_OS_X_VERSION_10_7)) and ((MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_7)))}
     function commonMetadata: NSArray; message 'commonMetadata'; deprecated 'available in 10.7 and later but deprecated in 10.9';

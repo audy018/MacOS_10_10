@@ -111,6 +111,9 @@ type
 		procedure setAccessibilityFrame(newValue: NSRect); message 'setAccessibilityFrame:';
     procedure setAccessibilityParent(newValue: id); message 'setAccessibilityParent:';
     procedure setAccessibilityIdentifier(newValue: NSString); message 'setAccessibilityIdentifier:';
+    procedure setAppearance(newValue: NSAppearance); message 'setAppearance:';
+    function appearance: NSAppearance; message 'appearance';
+    function effectiveAppearance: NSAppearance; message 'effectiveAppearance';
 
     procedure setAccessibilityActivationPoint(newValue: NSPoint); message 'setAccessibilityActivationPoint:';
     function accessibilityActivationPoint: NSPoint; message 'accessibilityActivationPoint';

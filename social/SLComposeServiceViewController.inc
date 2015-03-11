@@ -4,29 +4,22 @@
 
 { Types from SLComposeServiceViewController }
 {$ifdef TYPES}
-
-
-
-
-
-{$endif}
-
-
-{$ifdef TYPES}
 type
   SLComposeServiceViewControllerPtr = ^SLComposeServiceViewController;
 {$endif}
 
 {$ifdef CLASSES}
 
+// NOTE: NSTextViewDelegate was omitted from SLComposeServiceViewController to prevent a dependancy
+
 type
-  SLComposeServiceViewController = objcclass external (UIViewController, UITextViewDelegateProtocol)
+  SLComposeServiceViewController = objcclass external (NSViewController)
   public
     procedure presentationAnimationDidFinish; message 'presentationAnimationDidFinish';
     {$if defined(TARGET_OS_IPHONE)}
     function textView: UITextViewPtr; message 'textView';
     {$else}
-    function textView_: NSTextView; message 'textView';
+    function textView: NSTextView; message 'textView';
     {$endif}
     function contentText: NSString; message 'contentText';
     procedure setPlaceholder(newValue: NSString); message 'setPlaceholder:';

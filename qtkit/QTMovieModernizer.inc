@@ -34,14 +34,14 @@ type
     function initWithSourceURL_destinationURL (source: NSURL; destination: NSURL): id; message 'initWithSourceURL:destinationURL:';
     class function requiresModernization_error (source: NSURL; outError: NSErrorPtr): boolean; message 'requiresModernization:error:';
     procedure modernizeWithCompletionHandler (handler: OpaqueCBlock); message 'modernizeWithCompletionHandler:';
-    procedure cancel AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER; message 'cancel AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';
-    function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER: NSURL *sourceURL; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';
+    procedure cancel; message 'cancel';
+    {function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER: NSURL *; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';
     function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER_: NSURL *destinationURL; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';
     procedure setAVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER(newValue: NSString *outputFormat); message 'setAVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER:';
     function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER__: NSString *outputFormat; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';
     function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER___: NSError *error; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';
     procedure setAVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER_(newValue: QTMovieModernizerStatus status); message 'setAVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER:';
-    function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER____: QTMovieModernizerStatus status; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';
+    function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER____: QTMovieModernizerStatus status; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';}
   end;
 {$endif}
 

@@ -18,12 +18,12 @@ type
     _reserved2: clong;
     _reserved3: clong;
   public
-    function owner AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'owner AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function mediaType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'mediaType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function formatDescription AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTFormatDescription; message 'formatDescription AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function isEnabled AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isEnabled AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function owner: id; message 'owner';
+    function mediaType: NSString; message 'mediaType';
+    function formatDescription: QTFormatDescription; message 'formatDescription';
+    function isEnabled: boolean; message 'isEnabled';
     procedure setEnabled (enabled: boolean); message 'setEnabled:';
-    function connectionAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSDictionary; message 'connectionAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function connectionAttributes: NSDictionary; message 'connectionAttributes';
     procedure setConnectionAttributes (connectionAttributes: NSDictionary); message 'setConnectionAttributes:';
     function attributeIsReadOnly (attributeKey: NSString): boolean; message 'attributeIsReadOnly:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';

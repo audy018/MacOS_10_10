@@ -24,7 +24,7 @@ type
 const
   SCNPhysicsCollisionCategoryDefault = 1 shl 0;
   SCNPhysicsCollisionCategoryStatic = 1 shl 1;
-  SCNPhysicsCollisionCategoryAll = not(0)UL;
+  SCNPhysicsCollisionCategoryAll = 0;
 {$endif}
 
 {$ifdef CLASSES}

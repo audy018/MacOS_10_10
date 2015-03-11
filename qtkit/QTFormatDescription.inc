@@ -18,11 +18,11 @@ type
     _reserved2: clong;
     _reserved3: clong;
   public
-    function mediaType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'mediaType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function formatType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: UInt32; message 'formatType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function localizedFormatSummary AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'localizedFormatSummary AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function quickTimeSampleDescription AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSData; message 'quickTimeSampleDescription AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function formatDescriptionAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSDictionary; message 'formatDescriptionAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function mediaType: NSString; message 'mediaType';
+    function formatType: UInt32; message 'formatType';
+    function localizedFormatSummary: NSString; message 'localizedFormatSummary';
+    function quickTimeSampleDescription: NSData; message 'quickTimeSampleDescription';
+    function formatDescriptionAttributes: NSDictionary; message 'formatDescriptionAttributes';
     function attributeForKey (key: NSString): id; message 'attributeForKey:';
     function isEqualToFormatDescription (formatDescription: QTFormatDescription): boolean; message 'isEqualToFormatDescription:';
   end;

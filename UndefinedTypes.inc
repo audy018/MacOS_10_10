@@ -19,7 +19,9 @@ type
 type
 	dispatch_queue_t = pointer;
   dispatch_semaphore_t = pointer;
+	dispatch_block_t = pointer;
 	pthread_mutex_t = pointer;	
+	pthread_block_t = pointer;	
 
 { Security framework - SecureTransport.h }
 type

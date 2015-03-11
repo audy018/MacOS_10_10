@@ -47,34 +47,34 @@ type
     _movieControllerView_: QTMovieControllerView;
     {$endif}
   public
-    function movie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTMovie; message 'movie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function movie: QTMovie; message 'movie';
     procedure setMovie (movie: QTMovie); message 'setMovie:';
-    function preservesAspectRatio AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'preservesAspectRatio AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function preservesAspectRatio: boolean; message 'preservesAspectRatio';
     procedure setPreservesAspectRatio (preservesAspectRatio: boolean); message 'setPreservesAspectRatio:';
-    function fillColor AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSColor; message 'fillColor AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function fillColor: NSColor; message 'fillColor';
     procedure setFillColor (fillColor: NSColor); message 'setFillColor:';
-    function isControllerVisible AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isControllerVisible AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isControllerVisible: boolean; message 'isControllerVisible';
     procedure setControllerVisible (controllerVisible: boolean); message 'setControllerVisible:';
     procedure setShowsResizeIndicator (show: boolean); message 'setShowsResizeIndicator:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    function isBackButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isBackButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isBackButtonVisible: boolean; message 'isBackButtonVisible';
     procedure setBackButtonVisible (state: boolean); message 'setBackButtonVisible:';
-    function isCustomButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isCustomButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isCustomButtonVisible: boolean; message 'isCustomButtonVisible';
     procedure setCustomButtonVisible (state: boolean); message 'setCustomButtonVisible:';
-    function isHotSpotButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isHotSpotButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isHotSpotButtonVisible: boolean; message 'isHotSpotButtonVisible';
     procedure setHotSpotButtonVisible (state: boolean); message 'setHotSpotButtonVisible:';
-    function areStepButtonsVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'areStepButtonsVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function areStepButtonsVisible: boolean; message 'areStepButtonsVisible';
     procedure setStepButtonsVisible (state: boolean); message 'setStepButtonsVisible:';
-    function isTranslateButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isTranslateButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isTranslateButtonVisible: boolean; message 'isTranslateButtonVisible';
     procedure setTranslateButtonVisible (state: boolean); message 'setTranslateButtonVisible:';
-    function isVolumeButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isVolumeButtonVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isVolumeButtonVisible: boolean; message 'isVolumeButtonVisible';
     procedure setVolumeButtonVisible (state: boolean); message 'setVolumeButtonVisible:';
-    function areZoomButtonsVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'areZoomButtonsVisible AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function areZoomButtonsVisible: boolean; message 'areZoomButtonsVisible';
     procedure setZoomButtonsVisible (state: boolean); message 'setZoomButtonsVisible:';
     {$endif}
-    function movieBounds AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSRect; message 'movieBounds AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function movieControllerBounds AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSRect; message 'movieControllerBounds AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function controllerBarHeight AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: single; message 'controllerBarHeight AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function movieBounds: NSRect; message 'movieBounds';
+    function movieControllerBounds: NSRect; message 'movieControllerBounds';
+    function controllerBarHeight: single; message 'controllerBarHeight';
     procedure play (sender: id); message 'play:';
     procedure pause (sender: id); message 'pause:';
     procedure gotoBeginning (sender: id); message 'gotoBeginning:';
@@ -84,10 +84,10 @@ type
     procedure gotoPosterFrame (sender: id); message 'gotoPosterFrame:';
     procedure stepForward (sender: id); message 'stepForward:';
     procedure stepBackward (sender: id); message 'stepBackward:';
-    function isEditable AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isEditable AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isEditable: boolean; message 'isEditable';
     procedure setEditable (editable: boolean); message 'setEditable:';
     procedure cut (sender: id); message 'cut:';
-    procedure copy (sender: id); message 'copy:';
+    procedure copy_ (sender: id); message 'copy:';
     procedure paste (sender: id); message 'paste:';
     procedure selectAll (sender: id); message 'selectAll:';
     procedure selectNone (sender: id); message 'selectNone:';
@@ -97,7 +97,7 @@ type
     procedure replace (sender: id); message 'replace:';
     procedure trim (sender: id); message 'trim:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    function delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';
     {$endif}
 

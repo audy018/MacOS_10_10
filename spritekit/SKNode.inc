@@ -31,7 +31,7 @@ const
 {$ifdef CLASSES}
 
 type
-  SKNode = objcclass external (UIResponder, NSCopyingProtocol, NSCodingProtocol)
+  SKNode = objcclass external (NSResponder, NSCopyingProtocol, NSCodingProtocol)
   public
     function init: instancetype; message 'init'; { NS_DESIGNATED_INITIALIZER }
     function initWithCoder (aDecoder: NSCoder): instancetype; message 'initWithCoder:'; { NS_DESIGNATED_INITIALIZER }

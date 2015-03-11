@@ -467,8 +467,8 @@ var
 
 {$ifdef TYPES}
 const
-  kODExpirationTimeExpired = 0L;
-  kODExpirationTimeNeverExpires = -1L;
+  kODExpirationTimeExpired = 0;
+  kODExpirationTimeNeverExpires = -1;
 {$endif}
 
 {$ifdef __OBJC__}

@@ -7,6 +7,44 @@ type
   AVSampleCursorPtr = ^AVSampleCursor;
 {$endif}
 
+{$ifdef TYPES}
+type
+  AVSampleCursorDependencyInfo = record
+    sampleIndicatesWhetherItHasDependentSamples: boolean;
+    sampleHasDependentSamples: boolean;
+    sampleIndicatesWhetherItDependsOnOthers: boolean;
+    sampleDependsOnOthers: boolean;
+    sampleIndicatesWhetherItHasRedundantCoding: boolean;
+    sampleHasRedundantCoding: boolean;
+  end;
+type
+  AVSampleCursorDependencyInfoPtr = ^AVSampleCursorDependencyInfo;
+type
+  AVSampleCursorStorageRange = record
+    offset: cint64;
+    length: cint64;
+  end;
+type
+  AVSampleCursorStorageRangePtr = ^AVSampleCursorStorageRange;
+type
+  AVSampleCursorSyncInfo = record
+    sampleIsFullSync: boolean;
+    sampleIsPartialSync: boolean;
+    sampleIsDroppable: boolean;
+  end;
+type
+  AVSampleCursorSyncInfoPtr = ^AVSampleCursorSyncInfo;
+type
+  AVSampleCursorChunkInfo = record
+    chunkSampleCount: cint64;
+    chunkHasUniformSampleSizes: boolean;
+    chunkHasUniformSampleDurations: boolean;
+    chunkHasUniformFormatDescriptions: boolean;
+  end;
+type
+  AVSampleCursorChunkInfoPtr = ^AVSampleCursorChunkInfo;
+{$endif}
+
 {$if  not defined(TARGET_OS_IPHONE)}
 {$ifdef CLASSES}
 
@@ -37,7 +75,7 @@ type
 type
   AVSampleCursorCurrentSampleInfo = objccategory external (AVSampleCursor)
     function currentSampleDuration: CMTime; message 'currentSampleDuration';
-    function copyCurrentSampleFormatDescription CF_RETURNS_RETAINED: CMFormatDescriptionRef; message 'copyCurrentSampleFormatDescription CF_RETURNS_RETAINED';
+    function copyCurrentSampleFormatDescription: CMFormatDescriptionRef; message 'copyCurrentSampleFormatDescription'; { CF_RETURNS_RETAINED }
     function currentSampleSyncInfo: AVSampleCursorSyncInfo; message 'currentSampleSyncInfo';
     function currentSampleDependencyInfo: AVSampleCursorDependencyInfo; message 'currentSampleDependencyInfo';
   end;

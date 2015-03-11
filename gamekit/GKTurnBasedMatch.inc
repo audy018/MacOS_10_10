@@ -14,6 +14,17 @@ type
 {$endif}
 
 {$ifdef TYPES}
+const
+  GKTurnBasedExchangeStatusUnknown = 0;
+  GKTurnBasedExchangeStatusActive = 1;
+  GKTurnBasedExchangeStatusComplete = 2;
+  GKTurnBasedExchangeStatusResolved = 3;
+  GKTurnBasedExchangeStatusCanceled = 4;
+type
+  GKTurnBasedExchangeStatus = clong;
+{$endif}
+
+{$ifdef TYPES}
 type
   GKTurnBasedMatchStatus = NSInteger;
   GKTurnBasedMatchStatusPtr = ^GKTurnBasedMatchStatus;

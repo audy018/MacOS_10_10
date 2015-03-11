@@ -15,7 +15,7 @@ type
     comment: NSString;
     templateName: NSString;
     identifier: NSString;
-    function_: NSString;
+    functionPrivate: NSString;
     functionAttributes: NSArray;
     recordTypes: NSMutableDictionary;
   public

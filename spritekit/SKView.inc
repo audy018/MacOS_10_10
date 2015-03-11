@@ -16,7 +16,7 @@ type
 {$ifdef CLASSES}
 
 type
-  SKView = objcclass external (UIView)
+  SKView = objcclass external (NSView)
   public
     procedure setPaused(newValue: boolean); message 'setPaused:';
     function isPaused: boolean; message 'isPaused';

@@ -18,17 +18,17 @@ type
     _reserved2: clong;
     _reserved3: clong;
   public
-    function captureSession AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTCaptureSession; message 'captureSession AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function captureSession: QTCaptureSession; message 'captureSession';
     procedure setCaptureSession (captureSession: QTCaptureSession); message 'setCaptureSession:';
-    function availableVideoPreviewConnections AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'availableVideoPreviewConnections AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function videoPreviewConnection AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTCaptureConnection; message 'videoPreviewConnection AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function availableVideoPreviewConnections: NSArray; message 'availableVideoPreviewConnections';
+    function videoPreviewConnection: QTCaptureConnection; message 'videoPreviewConnection';
     procedure setVideoPreviewConnection (videoPreviewConnection: QTCaptureConnection); message 'setVideoPreviewConnection:';
-    function fillColor AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSColor; message 'fillColor AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function fillColor: NSColor; message 'fillColor';
     procedure setFillColor (fillColor: NSColor); message 'setFillColor:';
-    function preservesAspectRatio AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'preservesAspectRatio AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function preservesAspectRatio: boolean; message 'preservesAspectRatio';
     procedure setPreservesAspectRatio (preservesAspectRatio: boolean); message 'setPreservesAspectRatio:';
-    function previewBounds AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSRect; message 'previewBounds AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function previewBounds: NSRect; message 'previewBounds';
+    function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';
   end;
 

@@ -32,8 +32,7 @@ function ODRecordRemovePolicy(record_: ODRecordRef; policy: ODPolicyType; error:
 function ODRecordAddAccountPolicy(record_: ODRecordRef; policy: CFDictionaryRef; category: ODPolicyCategoryType; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
 function ODRecordRemoveAccountPolicy(record_: ODRecordRef; policy: CFDictionaryRef; category: ODPolicyCategoryType; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
 function ODRecordSetAccountPolicies(record_: ODRecordRef; policies: CFDictionaryRef; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
-function ODRecordCopyAccountPolicies(record_: ODRecordRef; error: CFErrorRefPtr): CF_RETURNS_RETAINED
-CFDictionaryRef; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
+function ODRecordCopyAccountPolicies(record_: ODRecordRef; error: CFErrorRefPtr): CFDictionaryRef; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA } { CF_RETURNS_RETAINED }
 function ODRecordAuthenticationAllowed(record_: ODRecordRef; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
 function ODRecordPasswordChangeAllowed(record_: ODRecordRef; newPassword: CFStringRef; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
 function ODRecordWillPasswordExpire(record_: ODRecordRef; willExpireIn: cuint64): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }

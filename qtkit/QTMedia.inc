@@ -34,14 +34,14 @@ type
     class function mediaWithQuickTimeMedia_error (media_: Media; errorPtr: NSErrorPtr): id; message 'mediaWithQuickTimeMedia:error:';
     function initWithQuickTimeMedia_error (media_: Media; errorPtr: NSErrorPtr): id; message 'initWithQuickTimeMedia:error:';
     {$endif}
-    function track AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTrack; message 'track AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function mediaAttributes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSDictionary; message 'mediaAttributes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function track: QTTrack; message 'track';
+    function mediaAttributes: NSDictionary; message 'mediaAttributes';
     procedure setMediaAttributes (attributes: NSDictionary); message 'setMediaAttributes:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';
     procedure setAttribute_forKey (value: id; attributeKey: NSString); message 'setAttribute:forKey:';
     function hasCharacteristic (characteristic: NSString): boolean; message 'hasCharacteristic:';
     {$if  not defined(__LP64__)}
-    function quickTimeMedia AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: Media; message 'quickTimeMedia AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function quickTimeMedia: Media; message 'quickTimeMedia';
     {$endif}
   end;
 {$endif}

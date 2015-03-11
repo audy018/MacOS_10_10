@@ -23,10 +23,8 @@ function ODNodeSetCredentialsExtended(node: ODNodeRef; recordType: ODRecordType;
 function ODNodeSetCredentialsUsingKerberosCache(node: ODNodeRef; cacheName: CFStringRef; error: CFErrorRefPtr): cbool; cdecl; external; deprecated 'in __MAC_10_6, __MAC_10_7, __IPHONE_NA, __IPHONE_NA';
 function ODNodeCreateRecord(node: ODNodeRef; recordType: ODRecordType; recordName: CFStringRef; attributeDict: CFDictionaryRef; error: CFErrorRefPtr): ODRecordRef; cdecl; external; { available starting in __MAC_10_6, __IPHONE_NA }
 function ODNodeCopyRecord(node: ODNodeRef; recordType: ODRecordType; recordName: CFStringRef; attributes: CFTypeRef; error: CFErrorRefPtr): ODRecordRef; cdecl; external; { available starting in __MAC_10_6, __IPHONE_NA }
-function ODNodeCustomCall(node: ODNodeRef; customCode: CFIndex; data: CFDataRef; error: CFErrorRefPtr): CF_RETURNS_RETAINED
-CFDataRef; cdecl; external; { available starting in __MAC_10_6, __IPHONE_NA }
-function ODNodeCustomFunction(node: ODNodeRef; function_: CFStringRef; payload: CFTypeRef; error: CFErrorRefPtr): CF_RETURNS_RETAINED
-CFTypeRef; cdecl; external; { available starting in __MAC_10_9, __IPHONE_NA }
+function ODNodeCustomCall(node: ODNodeRef; customCode: CFIndex; data: CFDataRef; error: CFErrorRefPtr): CFDataRef; cdecl; external; { available starting in __MAC_10_6, __IPHONE_NA } { CF_RETURNS_RETAINED }
+function ODNodeCustomFunction(node: ODNodeRef; function_: CFStringRef; payload: CFTypeRef; error: CFErrorRefPtr): CFTypeRef; cdecl; external; { available starting in __MAC_10_9, __IPHONE_NA } { CF_RETURNS_RETAINED }
 function ODNodeCopyPolicies(node: ODNodeRef; error: CFErrorRefPtr): CFDictionaryRef; cdecl; external; { available in __MAC_10_9, __MAC_10_10, __IPHONE_NA, __IPHONE_NA, "use ODNodeCopyAccountPolicies" }
 function ODNodeCopySupportedPolicies(node: ODNodeRef; error: CFErrorRefPtr): CFDictionaryRef; cdecl; external; deprecated 'in __MAC_10_9, __MAC_10_10, __IPHONE_NA, __IPHONE_NA';
 function ODNodeSetPolicies(node: ODNodeRef; policies: CFDictionaryRef; error: CFErrorRefPtr): cbool; cdecl; external; { available in __MAC_10_9, __MAC_10_10, __IPHONE_NA, __IPHONE_NA, "use ODNodeSetAccountPolicies" }
@@ -35,8 +33,7 @@ function ODNodeRemovePolicy(node: ODNodeRef; policyType: ODPolicyType; error: CF
 function ODNodeAddAccountPolicy(node: ODNodeRef; policy: CFDictionaryRef; category: ODPolicyCategoryType; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
 function ODNodeRemoveAccountPolicy(node: ODNodeRef; policy: CFDictionaryRef; category: ODPolicyCategoryType; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
 function ODNodeSetAccountPolicies(node: ODNodeRef; policies: CFDictionaryRef; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
-function ODNodeCopyAccountPolicies(node: ODNodeRef; error: CFErrorRefPtr): CF_RETURNS_RETAINED
-CFDictionaryRef; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
+function ODNodeCopyAccountPolicies(node: ODNodeRef; error: CFErrorRefPtr): CFDictionaryRef; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA } { CF_RETURNS_RETAINED }
 function ODNodePasswordContentCheck(node: ODNodeRef; password: CFStringRef; recordName: CFStringRef; error: CFErrorRefPtr): cbool; cdecl; external; { available starting in __MAC_10_10, __IPHONE_NA }
 {$endif}
 

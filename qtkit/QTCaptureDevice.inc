@@ -50,25 +50,25 @@ type
     _reserved2: clong;
     _reserved3: clong;
   public
-    class function inputDevices AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'inputDevices AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    class function inputDevices: NSArray; message 'inputDevices';
     class function inputDevicesWithMediaType (mediaType: NSString): NSArray; message 'inputDevicesWithMediaType:';
     class function defaultInputDeviceWithMediaType (mediaType: NSString): QTCaptureDevice; message 'defaultInputDeviceWithMediaType:';
     class function deviceWithUniqueID (deviceUniqueID: NSString): QTCaptureDevice; message 'deviceWithUniqueID:';
-    function uniqueID AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'uniqueID AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function modelUniqueID AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'modelUniqueID AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function localizedDisplayName AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'localizedDisplayName AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function formatDescriptions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'formatDescriptions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function uniqueID: NSString; message 'uniqueID';
+    function modelUniqueID: NSString; message 'modelUniqueID';
+    function localizedDisplayName: NSString; message 'localizedDisplayName';
+    function formatDescriptions: NSArray; message 'formatDescriptions';
     function hasMediaType (mediaType: NSString): boolean; message 'hasMediaType:';
-    function deviceAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSDictionary; message 'deviceAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function deviceAttributes: NSDictionary; message 'deviceAttributes';
     procedure setDeviceAttributes (deviceAttributes: NSDictionary); message 'setDeviceAttributes:';
     function attributeIsReadOnly (attributeKey: NSString): boolean; message 'attributeIsReadOnly:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';
     procedure setAttribute_forKey (attribute: id; attributeKey: NSString); message 'setAttribute:forKey:';
-    function isConnected AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isConnected AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function isInUseByAnotherApplication AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isInUseByAnotherApplication AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function isOpen AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isOpen AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isConnected: boolean; message 'isConnected';
+    function isInUseByAnotherApplication: boolean; message 'isInUseByAnotherApplication';
+    function isOpen: boolean; message 'isOpen';
     function open (errorPtr: NSErrorPtr): boolean; message 'open:';
-    procedure close AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'close AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    procedure close; message 'close';
 
     { Adopted protocols }
     procedure encodeWithCoder (aCoder: NSCoder); message 'encodeWithCoder:';

@@ -6,8 +6,7 @@
 {$ifdef TYPES}
 type
   CMIOHardwarePlugInRef = ^CMIOHardwarePlugInInterfacePtr;
-
-type
+  CMIOHardwarePlugInInterfacePtr = ^CMIOHardwarePlugInInterface;
   CMIOHardwarePlugInInterface = record
     _reserved: pointer;
     QueryInterface: function (self_: pointer; uuid: CFUUIDBytes; interface_: pointer): SInt32; cdecl;
@@ -34,8 +33,6 @@ type
     StreamDeckJog: function (self_: CMIOHardwarePlugInRef; stream: CMIOStreamID; speed: SInt32): OSStatus; cdecl;
     StreamDeckCueTo: function (self_: CMIOHardwarePlugInRef; stream: CMIOStreamID; frameNumber: Float64; playOnCue: Boolean): OSStatus; cdecl;
   end;
-type
-  CMIOHardwarePlugInInterfacePtr = ^CMIOHardwarePlugInInterface;
 {$endif}
 
 {$ifdef FUNCTIONS}

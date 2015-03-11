@@ -18,9 +18,9 @@ type
   public
     class function compressionOptionsIdentifiersForMediaType (mediaType: NSString): NSArray; message 'compressionOptionsIdentifiersForMediaType:';
     class function compressionOptionsWithIdentifier (identifier: NSString): id; message 'compressionOptionsWithIdentifier:';
-    function mediaType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'mediaType AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function localizedDisplayName AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'localizedDisplayName AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function localizedCompressionOptionsSummary AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSString; message 'localizedCompressionOptionsSummary AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function mediaType: NSString; message 'mediaType';
+    function localizedDisplayName: NSString; message 'localizedDisplayName';
+    function localizedCompressionOptionsSummary: NSString; message 'localizedCompressionOptionsSummary';
     function isEqualToCompressionOptions (compressionOptions: QTCompressionOptions): boolean; message 'isEqualToCompressionOptions:';
   end;
 {$endif}

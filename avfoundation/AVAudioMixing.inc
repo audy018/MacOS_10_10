@@ -9,21 +9,6 @@ type
   AVAudio3DMixingProtocolPtr = ^AVAudio3DMixingProtocol;
 {$endif}
 
-{$ifdef PROTOCOLS}
-
-type
-  AVAudioMixingProtocol = objcprotocol external name 'AVAudioMixing' (AVAudioStereoMixingProtocol, AVAudio3DMixingProtocol)
-    procedure setVolume(newValue: single); message 'setVolume:';
-    function volume: single; message 'volume';
-  end;
-
-type
-  AVAudioStereoMixingProtocol = objcprotocol external name 'AVAudioStereoMixing' (NSObjectProtocol)
-    procedure setPan(newValue: single); message 'setPan:';
-    function pan: single; message 'pan';
-  end;
-{$endif}
-
 {$ifdef TYPES}
 type
   AVAudio3DMixingRenderingAlgorithm = NSInteger;
@@ -38,6 +23,11 @@ const
 {$endif}
 
 {$ifdef PROTOCOLS}
+type
+  AVAudioStereoMixingProtocol = objcprotocol external name 'AVAudioStereoMixing' (NSObjectProtocol)
+    procedure setPan(newValue: single); message 'setPan:';
+    function pan: single; message 'pan';
+  end;
 
 type
   AVAudio3DMixingProtocol = objcprotocol external name 'AVAudio3DMixing' (NSObjectProtocol)
@@ -54,5 +44,12 @@ type
     procedure setPosition(newValue: AVAudio3DPoint); message 'setPosition:';
     function position: AVAudio3DPoint; message 'position';
   end;
+
+type
+  AVAudioMixingProtocol = objcprotocol external name 'AVAudioMixing' (AVAudioStereoMixingProtocol, AVAudio3DMixingProtocol)
+    procedure setVolume(newValue: single); message 'setVolume:';
+    function volume: single; message 'volume';
+  end;
+
 {$endif}
 

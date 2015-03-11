@@ -35,27 +35,27 @@ type
     _reserved5: clong;
     _reserved6: clong;
   public
-    function outputFileURL AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSURL; message 'outputFileURL AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function outputFileURL: NSURL; message 'outputFileURL';
     procedure recordToOutputFileURL (url: NSURL); message 'recordToOutputFileURL:';
     procedure recordToOutputFileURL_bufferDestination (url: NSURL; bufferDestination: QTCaptureFileOutputBufferDestination); message 'recordToOutputFileURL:bufferDestination:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_6_3)}
-    function isRecordingPaused AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isRecordingPaused AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure pauseRecording AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'pauseRecording AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure resumeRecording AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'resumeRecording AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isRecordingPaused: boolean; message 'isRecordingPaused';
+    procedure pauseRecording; message 'pauseRecording';
+    procedure resumeRecording; message 'resumeRecording';
     {$endif}
     function compressionOptionsForConnection (connection: QTCaptureConnection): QTCompressionOptions; message 'compressionOptionsForConnection:';
     procedure setCompressionOptions_forConnection (compressionOptions: QTCompressionOptions; connection: QTCaptureConnection); message 'setCompressionOptions:forConnection:';
-    function maximumVideoSize AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSSize; message 'maximumVideoSize AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function maximumVideoSize: NSSize; message 'maximumVideoSize';
     procedure setMaximumVideoSize (maximumVideoSize: NSSize); message 'setMaximumVideoSize:';
-    function minimumVideoFrameInterval AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSTimeInterval; message 'minimumVideoFrameInterval AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function minimumVideoFrameInterval: NSTimeInterval; message 'minimumVideoFrameInterval';
     procedure setMinimumVideoFrameInterval (minimumVideoFrameInterval: NSTimeInterval); message 'setMinimumVideoFrameInterval:';
-    function recordedDuration AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'recordedDuration AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function recordedFileSize AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: UInt64; message 'recordedFileSize AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function maximumRecordedDuration AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'maximumRecordedDuration AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function recordedDuration: QTTime; message 'recordedDuration';
+    function recordedFileSize: UInt64; message 'recordedFileSize';
+    function maximumRecordedDuration: QTTime; message 'maximumRecordedDuration';
     procedure setMaximumRecordedDuration (maximumRecordedDuration: QTTime); message 'setMaximumRecordedDuration:';
-    function maximumRecordedFileSize AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: UInt64; message 'maximumRecordedFileSize AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function maximumRecordedFileSize: UInt64; message 'maximumRecordedFileSize';
     procedure setMaximumRecordedFileSize (maximumRecordedFileSize: UInt64); message 'setMaximumRecordedFileSize:';
-    function delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';
   end;
 

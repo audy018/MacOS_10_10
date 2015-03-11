@@ -20,7 +20,7 @@ type
 type
   NSValueQTTimeExtensions = objccategory external (NSValue)
     class function valueWithQTTime (time: QTTime): NSValue; message 'valueWithQTTime:';
-    function QTTimeValue AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'QTTimeValue AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function QTTimeValue: QTTime; message 'QTTimeValue';
   end;
 
 type
@@ -36,7 +36,7 @@ type
 type
   NSValueQTSMPTETimeExtensions = objccategory external (NSValue)
     class function valueWithSMPTETime (time: SMPTETime): NSValue; message 'valueWithSMPTETime:';
-    function SMPTETimeValue AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: SMPTETime; message 'SMPTETimeValue AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function SMPTETimeValue: SMPTETime; message 'SMPTETimeValue';
   end;
 
 type

@@ -38,7 +38,7 @@ const
 {$ifdef CLASSES}
 
 type
-  MKAnnotationView = objcclass external (UIView)
+  MKAnnotationView = objcclass external (NSView)
   public
     function initWithAnnotation_reuseIdentifier (annotation: MKAnnotationProtocol; reuseIdentifier: NSString): instancetype; message 'initWithAnnotation:reuseIdentifier:';
     function reuseIdentifier: NSString; message 'reuseIdentifier';
@@ -50,7 +50,7 @@ type
     function image: UIImage; message 'image';
     {$else}
     procedure setImage_(newValue: NSImage); message 'setImage:';
-    function image_: NSImage; message 'image';
+    function image: NSImage; message 'image';
     {$endif}
     procedure setCenterOffset(newValue: CGPoint); message 'setCenterOffset:';
     function centerOffset: CGPoint; message 'centerOffset';

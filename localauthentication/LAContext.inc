@@ -21,7 +21,7 @@ const
 type
   LAContext = objcclass external (NSObject)
   public
-    function canEvaluatePolicy_error (policy: LAPolicy; error: NSError * __autoreleasingPtr): boolean; message 'canEvaluatePolicy:error:';
+    function canEvaluatePolicy_error (policy: LAPolicy; error: NSErrorPtr): boolean; message 'canEvaluatePolicy:error:';
     procedure evaluatePolicy_localizedReason_reply (policy: LAPolicy; localizedReason: NSString; reply: OpaqueCBlock); message 'evaluatePolicy:localizedReason:reply:';
     procedure setLocalizedFallbackTitle(newValue: NSString); message 'setLocalizedFallbackTitle:';
     function localizedFallbackTitle: NSString; message 'localizedFallbackTitle';

@@ -174,7 +174,7 @@ type
     {$if (MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5)}
     procedure drawPagePost (page: PDFPage); message 'drawPagePost:';
     {$endif}
-    procedure copy (sender: id); message 'copy:';
+    procedure copy_ (sender: id); message 'copy:';
     procedure printWithInfo_autoRotate (printInfo: NSPrintInfo; doRotate: boolean); message 'printWithInfo:autoRotate:';
     {$if (MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5)}
     procedure printWithInfo_autoRotate_pageScaling (printInfo: NSPrintInfo; doRotate: boolean; scale: PDFPrintScalingMode); message 'printWithInfo:autoRotate:pageScaling:';

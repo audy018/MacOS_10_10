@@ -156,7 +156,7 @@ type
     _reserved14: clong;
     _reserved15: clong;
   public
-    function duration AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'duration AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function duration: QTTime; message 'duration';
 
     { Adopted protocols }
     function copyWithZone (zone: NSZonePtr): id; message 'copyWithZone:';
@@ -172,12 +172,12 @@ type
     class function canInitWithURL (url: NSURL): boolean; message 'canInitWithURL:';
     class function canInitWithDataReference (dataReference: QTDataReference): boolean; message 'canInitWithDataReference:';
     class function movieFileTypes (types: QTMovieFileTypeOptions): NSArray; message 'movieFileTypes:';
-    class function movieUnfilteredFileTypes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'movieUnfilteredFileTypes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    class function movieUnfilteredPasteboardTypes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'movieUnfilteredPasteboardTypes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    class function movieUnfilteredFileTypes: NSArray; message 'movieUnfilteredFileTypes';
+    class function movieUnfilteredPasteboardTypes: NSArray; message 'movieUnfilteredPasteboardTypes';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
     class function movieTypesWithOptions (types: QTMovieFileTypeOptions): NSArray; message 'movieTypesWithOptions:';
     {$endif}
-    class function movie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'movie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    class function movie: id; message 'movie';
     class function movieWithFile_error (fileName: NSString; errorPtr: NSErrorPtr): id; message 'movieWithFile:error:';
     class function movieWithURL_error (url: NSURL; errorPtr: NSErrorPtr): id; message 'movieWithURL:error:';
     class function movieWithDataReference_error (dataReference: QTDataReference; errorPtr: NSErrorPtr): id; message 'movieWithDataReference:error:';
@@ -203,24 +203,24 @@ type
     function initToWritableFile_error (filename: NSString; errorPtr: NSErrorPtr): id; message 'initToWritableFile:error:';
     function initToWritableData_error (data: NSMutableData; errorPtr: NSErrorPtr): id; message 'initToWritableData:error:';
     function initToWritableDataReference_error (dataReference: QTDataReference; errorPtr: NSErrorPtr): id; message 'initToWritableDataReference:error:';
-    procedure invalidate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'invalidate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    procedure invalidate; message 'invalidate';
     {$endif}
   end;
 
 type
   QTMovie_Inspection = objccategory external (QTMovie)
-    function movieAttributes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSDictionary; message 'movieAttributes AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function movieAttributes: NSDictionary; message 'movieAttributes';
     procedure setMovieAttributes (attributes: NSDictionary); message 'setMovieAttributes:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';
     procedure setAttribute_forKey (value: id; attributeKey: NSString); message 'setAttribute:forKey:';
-    function tracks AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'tracks AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function tracks: NSArray; message 'tracks';
     function tracksOfMediaType (type_: NSString): NSArray; message 'tracksOfMediaType:';
   end;
 
 type
   QTMovie_Image = objccategory external (QTMovie)
-    function posterImage AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSImage; message 'posterImage AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function currentFrameImage AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSImage; message 'currentFrameImage AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function posterImage: NSImage; message 'posterImage';
+    function currentFrameImage: NSImage; message 'currentFrameImage';
     function frameImageAtTime (time: QTTime): NSImage; message 'frameImageAtTime:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
     function frameImageAtTime_withAttributes_error (time: QTTime; attributes: NSDictionary; errorPtr: NSErrorPtr): pointer; message 'frameImageAtTime:withAttributes:error:';
@@ -229,49 +229,49 @@ type
 
 type
   QTMovie_Format = objccategory external (QTMovie)
-    function movieFormatRepresentation AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSData; message 'movieFormatRepresentation AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function movieFormatRepresentation: NSData; message 'movieFormatRepresentation';
     function writeToFile_withAttributes (fileName: NSString; attributes: NSDictionary): boolean; message 'writeToFile:withAttributes:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
     function writeToFile_withAttributes_error (fileName: NSString; attributes: NSDictionary; errorPtr: NSErrorPtr): boolean; message 'writeToFile:withAttributes:error:';
     {$endif}
-    function canUpdateMovieFile AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'canUpdateMovieFile AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function updateMovieFile AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'updateMovieFile AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function canUpdateMovieFile: boolean; message 'canUpdateMovieFile';
+    function updateMovieFile: boolean; message 'updateMovieFile';
   end;
 
 type
   QTMovie_Time = objccategory external (QTMovie)
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    procedure autoplay AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_6_3; message 'autoplay AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_6_3';
+    procedure autoplay; message 'autoplay';
     {$endif}
-    procedure play AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'play AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure stop AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'stop AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function currentTime AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'currentTime AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    procedure play; message 'play';
+    procedure stop; message 'stop';
+    function currentTime: QTTime; message 'currentTime';
     procedure setCurrentTime (time: QTTime); message 'setCurrentTime:';
-    procedure gotoBeginning AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'gotoBeginning AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure gotoEnd AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'gotoEnd AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure gotoNextSelectionPoint AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'gotoNextSelectionPoint AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure gotoPreviousSelectionPoint AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'gotoPreviousSelectionPoint AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure gotoPosterTime AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'gotoPosterTime AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure stepForward AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'stepForward AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure stepBackward AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'stepBackward AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    procedure gotoBeginning; message 'gotoBeginning';
+    procedure gotoEnd; message 'gotoEnd';
+    procedure gotoNextSelectionPoint; message 'gotoNextSelectionPoint';
+    procedure gotoPreviousSelectionPoint; message 'gotoPreviousSelectionPoint';
+    procedure gotoPosterTime; message 'gotoPosterTime';
+    procedure stepForward; message 'stepForward';
+    procedure stepBackward; message 'stepBackward';
   end;
 
 type
   QTMovie_PlaybackControl = objccategory external (QTMovie)
-    function rate AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: single; message 'rate AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function rate: single; message 'rate';
     procedure setRate (rate: single); message 'setRate:';
-    function volume AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: single; message 'volume AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function volume: single; message 'volume';
     procedure setVolume (volume: single); message 'setVolume:';
-    function muted AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'muted AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function muted: boolean; message 'muted';
     procedure setMuted (mute: boolean); message 'setMuted:';
   end;
 
 type
   QTMovie_Selection = objccategory external (QTMovie)
     procedure setSelection (selection: QTTimeRange); message 'setSelection:';
-    function selectionStart AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'selectionStart AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function selectionEnd AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'selectionEnd AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function selectionDuration AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTTime; message 'selectionDuration AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function selectionStart: QTTime; message 'selectionStart';
+    function selectionEnd: QTTime; message 'selectionEnd';
+    function selectionDuration: QTTime; message 'selectionDuration';
   end;
 
 type
@@ -297,7 +297,7 @@ type
 
 type
   QTMovie_Delegate = objccategory external (QTMovie)
-    function delegate AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'delegate AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';
   end;
 {$endif}
@@ -307,8 +307,8 @@ type
 
 type
   QTMovie_Primitives = objccategory external (QTMovie)
-    function quickTimeMovie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: Movie; message 'quickTimeMovie AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function quickTimeMovieController AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: MovieController; message 'quickTimeMovieController AVAILABLE_QTKIT_VERSION_7_0_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function quickTimeMovie: Movie; message 'quickTimeMovie';
+    function quickTimeMovieController: MovieController; message 'quickTimeMovieController';
   end;
 {$endif}
 
@@ -318,8 +318,8 @@ type
 type
   QTMovie_VisualSupport = objccategory external (QTMovie)
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    procedure generateApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'generateApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    procedure removeApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'removeApertureModeDimensions AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    procedure generateApertureModeDimensions; message 'generateApertureModeDimensions';
+    procedure removeApertureModeDimensions; message 'removeApertureModeDimensions';
     {$endif}
   end;
 
@@ -328,7 +328,7 @@ type
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
     {$if  not defined(__LP64__)}
     procedure setVisualContext (visualContext: QTVisualContextRef); message 'setVisualContext:';
-    function visualContext AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTVisualContextRef; message 'visualContext AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function visualContext: QTVisualContextRef; message 'visualContext';
     {$endif}
     {$endif}
   end;
@@ -336,24 +336,24 @@ type
 type
   QTMovie_Threading = objccategory external (QTMovie)
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    class procedure enterQTKitOnThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'enterQTKitOnThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    class procedure enterQTKitOnThreadDisablingThreadSafetyProtection AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'enterQTKitOnThreadDisablingThreadSafetyProtection AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    class procedure exitQTKitOnThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3; message 'exitQTKitOnThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function attachToCurrentThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'attachToCurrentThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function detachFromCurrentThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'detachFromCurrentThread AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    class procedure enterQTKitOnThread; message 'enterQTKitOnThread';
+    class procedure enterQTKitOnThreadDisablingThreadSafetyProtection; message 'enterQTKitOnThreadDisablingThreadSafetyProtection';
+    class procedure exitQTKitOnThread; message 'exitQTKitOnThread';
+    function attachToCurrentThread: boolean; message 'attachToCurrentThread';
+    function detachFromCurrentThread: boolean; message 'detachFromCurrentThread';
     procedure setIdling (state: boolean); message 'setIdling:';
-    function isIdling AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'isIdling AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function isIdling: boolean; message 'isIdling';
     {$endif}
   end;
 
 type
   QTMovie_Chapters = objccategory external (QTMovie)
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    function hasChapters AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'hasChapters AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function chapterCount AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSInteger; message 'chapterCount AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
-    function chapters AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSArray; message 'chapters AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function hasChapters: boolean; message 'hasChapters';
+    function chapterCount: NSInteger; message 'chapterCount';
+    function chapters: NSArray; message 'chapters';
     procedure addChapters_withAttributes_error (chapters: NSArray; attributes: NSDictionary; errorPtr: NSErrorPtr); message 'addChapters:withAttributes:error:';
-    function removeChapters AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: boolean; message 'removeChapters AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function removeChapters: boolean; message 'removeChapters';
     function startTimeOfChapter (chapterIndex: NSInteger): QTTime; message 'startTimeOfChapter:';
     function chapterIndexForTime (time: QTTime): NSInteger; message 'chapterIndexForTime:';
     {$endif}

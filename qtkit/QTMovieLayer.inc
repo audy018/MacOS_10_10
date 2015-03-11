@@ -18,7 +18,7 @@ type
     class function layerWithMovie (movie: QTMovie): id; message 'layerWithMovie:';
     function initWithMovie (movie: QTMovie): id; message 'initWithMovie:';
     procedure setMovie (movie: QTMovie); message 'setMovie:';
-    function movie AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTMovie; message 'movie AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function movie: QTMovie; message 'movie';
   end;
 {$endif}
 

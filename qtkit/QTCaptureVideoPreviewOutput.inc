@@ -24,13 +24,13 @@ type
     _delegate: id;
     _reserved4: clong;
   public
-    function pixelBufferAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: NSDictionary; message 'pixelBufferAttributes AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function pixelBufferAttributes: NSDictionary; message 'pixelBufferAttributes';
     procedure setPixelBufferAttributes (pixelBufferAttributes: NSDictionary); message 'setPixelBufferAttributes:';
     {$if  not defined(__LP64__)}
     function visualContextForConnection (connection: QTCaptureConnection): QTVisualContextRef; message 'visualContextForConnection:';
     procedure setVisualContext_forConnection (visualContext: QTVisualContextRef; connection: QTCaptureConnection); message 'setVisualContext:forConnection:';
     {$endif}
-    function delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'delegate AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';
     procedure outputVideoFrame_withSampleBuffer_fromConnection (videoFrame: CVImageBufferRef; sampleBuffer: QTSampleBuffer; connection: QTCaptureConnection); message 'outputVideoFrame:withSampleBuffer:fromConnection:';
   end;

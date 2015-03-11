@@ -18,7 +18,7 @@ type
     class function layerWithSession (session: QTCaptureSession): id; message 'layerWithSession:';
     function initWithSession (session: QTCaptureSession): id; message 'initWithSession:';
     procedure setSession (session: QTCaptureSession); message 'setSession:';
-    function session AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTCaptureSession; message 'session AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function session: QTCaptureSession; message 'session';
   end;
 {$endif}
 

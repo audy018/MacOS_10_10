@@ -20,7 +20,7 @@ type
   public
     class function deviceInputWithDevice (device: QTCaptureDevice): id; message 'deviceInputWithDevice:';
     function initWithDevice (device: QTCaptureDevice): id; message 'initWithDevice:';
-    function device AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: QTCaptureDevice; message 'device AVAILABLE_QTKIT_VERSION_7_2_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function device: QTCaptureDevice; message 'device';
   end;
 {$endif}
 

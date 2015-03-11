@@ -19,7 +19,7 @@ type
     _reserved5: clong;
     _reserved6: clong;
   public
-    function delegate AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3: id; message 'delegate AVAILABLE_QTKIT_VERSION_7_6_3_AND_LATER_BUT_DEPRECATED_IN_QTKIT_VERSION_7_7_3';
+    function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';
     procedure outputAudioSampleBuffer_fromConnection (sampleBuffer: QTSampleBuffer; connection: QTCaptureConnection); message 'outputAudioSampleBuffer:fromConnection:';
   end;
