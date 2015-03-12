@@ -1,5 +1,4 @@
-{ Parsed from GLKit.framework (MacOSX10.10) GLKMatrix4.h }
-{ Created on Sun Mar 8 1:48:55 2015 }
+{ Parsed from GLKit.framework GLKMatrix4.h }
 
 {$ifndef __GLK_MATRIX_4_H}
 

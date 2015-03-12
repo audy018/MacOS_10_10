@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSProxy.h }
-{ Created on Sun Mar 8 1:49:14 2015 }
+{ Parsed from Foundation.framework NSProxy.h }
 
 
 {$ifdef TYPES}
@@ -23,7 +22,7 @@ type
     procedure finalize; message 'finalize';
     function description: NSString; message 'description';
     function debugDescription: NSString; message 'debugDescription';
-    class function respondsToSelector (aSelector: SEL): boolean; message 'respondsToSelector:';
+    class function classRespondsToSelector (aSelector: SEL): boolean; message 'respondsToSelector:';
     function allowsWeakReference: boolean; message 'allowsWeakReference';
     function retainWeakReference: boolean; message 'retainWeakReference';
   end;

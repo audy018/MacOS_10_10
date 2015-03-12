@@ -1,5 +1,4 @@
-{ Parsed from CoreMedia.framework (MacOSX10.10) CMBlockBuffer.h }
-{ Created on Sun Mar 8 1:47:37 2015 }
+{ Parsed from CoreMedia.framework CMBlockBuffer.h }
 
 {$ifndef CMBLOCKBUFFER_H}
 

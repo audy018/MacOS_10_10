@@ -1,5 +1,4 @@
-{ Parsed from QTKit.framework (MacOSX10.10) QTMovieModernizer.h }
-{ Created on Sun Mar 8 1:48:38 2015 }
+{ Parsed from QTKit.framework QTMovieModernizer.h }
 
 
 {$ifdef TYPES}

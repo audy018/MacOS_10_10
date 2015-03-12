@@ -197,7 +197,7 @@ unit CocoaAll;
 interface
 
 {$linkframework Foundation}
-{$linkframework CoreImage}
+{linkframework CoreImage}
 {$linkframework QuartzCore}
 {$linkframework CoreData}
 {$linkframework AppKit}

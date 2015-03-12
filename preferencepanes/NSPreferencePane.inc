@@ -1,5 +1,4 @@
-{ Parsed from PreferencePanes.framework (MacOSX10.10) NSPreferencePane.h }
-{ Created on Sun Mar 8 1:48:08 2015 }
+{ Parsed from PreferencePanes.framework NSPreferencePane.h }
 
 
 {$ifdef TYPES}

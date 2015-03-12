@@ -1,5 +1,4 @@
-{ Parsed from SpriteKit.framework (MacOSX10.10) SKPhysicsContact.h }
-{ Created on Sun Mar 8 1:48:56 2015 }
+{ Parsed from SpriteKit.framework SKPhysicsContact.h }
 
 
 {$ifdef TYPES}

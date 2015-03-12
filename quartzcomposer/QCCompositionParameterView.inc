@@ -1,5 +1,4 @@
-{ Parsed from QuartzComposer.framework (MacOSX10.10) QCCompositionParameterView.h }
-{ Created on Sun Mar 8 1:48:39 2015 }
+{ Parsed from QuartzComposer.framework QCCompositionParameterView.h }
 
 
 {$ifdef TYPES}

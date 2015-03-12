@@ -1,5 +1,4 @@
-{ Parsed from AppKit.framework (MacOSX10.10) NSOutlineView.h }
-{ Created on Sun Mar 8 1:49:08 2015 }
+{ Parsed from AppKit.framework NSOutlineView.h }
 
 
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from InputMethodKit.framework (MacOSX10.10) IMKCandidates.h }
-{ Created on Sun Mar 8 1:47:49 2015 }
+{ Parsed from InputMethodKit.framework IMKCandidates.h }
 
 
 {$ifdef TYPES}

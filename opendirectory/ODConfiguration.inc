@@ -1,5 +1,4 @@
-{ Parsed from OpenDirectory.framework (MacOSX10.10) ODConfiguration.h }
-{ Created on Sun Mar 8 1:48:45 2015 }
+{ Parsed from OpenDirectory.framework ODConfiguration.h }
 
 
 {$ifdef TYPES}

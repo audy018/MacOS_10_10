@@ -1,5 +1,4 @@
-{ Parsed from Social.framework (MacOSX10.10) SLRequest.h }
-{ Created on Sun Mar 8 1:46:54 2015 }
+{ Parsed from Social.framework SLRequest.h }
 
 
 { Types from SLRequest }

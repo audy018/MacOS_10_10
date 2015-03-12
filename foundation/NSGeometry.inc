@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSGeometry.h }
-{ Created on Sun Mar 8 1:49:14 2015 }
+{ Parsed from Foundation.framework NSGeometry.h }
 
 {$if defined(__LP64__) or defined(TARGET_OS_EMBEDDED) or defined(TARGET_OS_IPHONE) or defined(TARGET_OS_WIN32) or defined(NS_BUILD_32_LIKE_64) or defined(NSGEOMETRY_TYPES_SAME_AS_CGGEOMETRY_TYPES)}
 {$ifdef TYPES}

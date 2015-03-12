@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSHFSFileTypes.h }
-{ Created on Sun Mar 8 1:49:15 2015 }
+{ Parsed from Foundation.framework NSHFSFileTypes.h }
 
 {$ifdef FUNCTIONS}
 function NSFileTypeForHFSTypeCode(hfsFileTypeCode: OSType): NSString; cdecl; external;

@@ -1,5 +1,4 @@
-{ Parsed from QTKit.framework (MacOSX10.10) QTError.h }
-{ Created on Sun Mar 8 1:48:37 2015 }
+{ Parsed from QTKit.framework QTError.h }
 
 {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
 {$ifdef EXTERNAL_SYMBOLS}

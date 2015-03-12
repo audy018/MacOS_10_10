@@ -1,5 +1,4 @@
-{ Parsed from QuartzFilters.framework (MacOSX10.10) QuartzFilterManager.h }
-{ Created on Sun Mar 8 1:48:24 2015 }
+{ Parsed from QuartzFilters.framework QuartzFilterManager.h }
 
 
 {$ifdef TYPES}

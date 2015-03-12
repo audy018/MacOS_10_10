@@ -1,5 +1,4 @@
-{ Parsed from AppKit.framework (MacOSX10.10) AppKitErrors.h }
-{ Created on Sun Mar 8 1:49:07 2015 }
+{ Parsed from AppKit.framework AppKitErrors.h }
 
 {$ifdef TYPES}
 const

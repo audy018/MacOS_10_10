@@ -1,5 +1,4 @@
-{ Parsed from DiscRecording.framework (MacOSX10.10) DRTrack_ContentSupport.h }
-{ Created on Sun Mar 8 1:47:42 2015 }
+{ Parsed from DiscRecording.framework DRTrack_ContentSupport.h }
 
 {$ifdef CLASSES}
 

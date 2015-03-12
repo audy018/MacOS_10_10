@@ -1,5 +1,4 @@
-{ Parsed from CoreVideo.framework (MacOSX10.10) CVOpenGLTexture.h }
-{ Created on Sun Mar 8 1:48:48 2015 }
+{ Parsed from CoreVideo.framework CVOpenGLTexture.h }
 
 {$if  not (defined(__COREVIDEO_CVOPENGLTEXTURE_H__))}
 {$ifdef TYPES}

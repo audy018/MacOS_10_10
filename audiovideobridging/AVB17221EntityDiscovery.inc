@@ -1,5 +1,4 @@
-{ Parsed from AudioVideoBridging.framework (MacOSX10.10) AVB17221EntityDiscovery.h }
-{ Created on Sun Mar 8 1:45:57 2015 }
+{ Parsed from AudioVideoBridging.framework AVB17221EntityDiscovery.h }
 
 
 {$ifdef TYPES}

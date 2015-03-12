@@ -1,5 +1,4 @@
-{ Parsed from Social.framework (MacOSX10.10) SLServiceTypes.h }
-{ Created on Sun Mar 8 1:46:54 2015 }
+{ Parsed from Social.framework SLServiceTypes.h }
 
 {$ifdef EXTERNAL_SYMBOLS}
 var

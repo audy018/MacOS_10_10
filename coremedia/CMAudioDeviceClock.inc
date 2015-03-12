@@ -1,5 +1,4 @@
-{ Parsed from CoreMedia.framework (MacOSX10.10) CMAudioDeviceClock.h }
-{ Created on Sun Mar 8 1:47:37 2015 }
+{ Parsed from CoreMedia.framework CMAudioDeviceClock.h }
 
 {$ifndef __CMAUDIODEVICECLOCK__}
 

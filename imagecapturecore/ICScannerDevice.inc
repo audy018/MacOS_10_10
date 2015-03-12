@@ -1,5 +1,4 @@
-{ Parsed from ImageCaptureCore.framework (MacOSX10.10) ICScannerDevice.h }
-{ Created on Sun Mar 8 1:47:45 2015 }
+{ Parsed from ImageCaptureCore.framework ICScannerDevice.h }
 
 
 {$ifdef TYPES}

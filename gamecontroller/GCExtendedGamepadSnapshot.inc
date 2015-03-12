@@ -1,5 +1,4 @@
-{ Parsed from GameController.framework (MacOSX10.10) GCExtendedGamepadSnapshot.h }
-{ Created on Sun Mar 8 1:48:49 2015 }
+{ Parsed from GameController.framework GCExtendedGamepadSnapshot.h }
 
 
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from GLKit.framework (MacOSX10.10) GLKQuaternion.h }
-{ Created on Sun Mar 8 1:48:55 2015 }
+{ Parsed from GLKit.framework GLKQuaternion.h }
 
 {$ifndef __GLK_QUATERNION_H}
 

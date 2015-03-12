@@ -1,5 +1,4 @@
-{ Parsed from AppKit.framework (MacOSX10.10) NSPopover.h }
-{ Created on Sun Mar 8 1:49:07 2015 }
+{ Parsed from AppKit.framework NSPopover.h }
 
 
 { Types from NSPopover }
@@ -35,8 +34,19 @@ const
 
 {$ifdef CLASSES}
 
+{$if (MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_10)}
 type
-  NSPopover = objcclass external (NSResponder, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol)
+	_NSAppearanceCustomizationProtocol = NSAppearanceCustomizationProtocol;
+{$else}
+type
+	NSPopoverAppearanceCustomizationProtocol = objcprotocol(NSPopoverAppearanceCustomizationProtocol)
+	end;
+type
+	_NSAppearanceCustomizationProtocol = NSPopoverAppearanceCustomizationProtocol;
+{$endif}
+
+type
+  NSPopover = objcclass external (NSResponder, _NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol)
   private
     _bindingAdaptor: id;
     _delegate: NSPopoverDelegateProtocol;
@@ -89,8 +99,8 @@ type
     function appearance: NSAppearance; message 'appearance';
     function effectiveAppearance: NSAppearance; message 'effectiveAppearance';
     {$else}
-    procedure setAppearance_(newValue: NSPopoverAppearance); message 'setAppearance:';
-    function appearance_: NSPopoverAppearance; message 'appearance';
+    procedure setAppearance(newValue: NSPopoverAppearance); message 'setAppearance:';
+    function appearance: NSPopoverAppearance; message 'appearance';
     {$endif}
     procedure setBehavior(newValue: NSPopoverBehavior); message 'setBehavior:';
     function behavior: NSPopoverBehavior; message 'behavior';
@@ -111,10 +121,13 @@ type
 		procedure setAccessibilityFrame(newValue: NSRect); message 'setAccessibilityFrame:';
     procedure setAccessibilityParent(newValue: id); message 'setAccessibilityParent:';
     procedure setAccessibilityIdentifier(newValue: NSString); message 'setAccessibilityIdentifier:';
+
+		{$if (MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_10)}
     procedure setAppearance(newValue: NSAppearance); message 'setAppearance:';
     function appearance: NSAppearance; message 'appearance';
     function effectiveAppearance: NSAppearance; message 'effectiveAppearance';
-
+		{$endif}
+		
     procedure setAccessibilityActivationPoint(newValue: NSPoint); message 'setAccessibilityActivationPoint:';
     function accessibilityActivationPoint: NSPoint; message 'accessibilityActivationPoint';
     procedure setAccessibilityAllowedValues(newValue: NSArray); message 'setAccessibilityAllowedValues:';

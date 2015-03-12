@@ -1,5 +1,4 @@
-{ Parsed from CoreMediaIO.framework (MacOSX10.10) CMIOSampleBuffer.h }
-{ Created on Sun Mar 8 1:47:37 2015 }
+{ Parsed from CoreMediaIO.framework CMIOSampleBuffer.h }
 
 {$if  not (defined(__CMIOSampleBuffer_h__))}
 

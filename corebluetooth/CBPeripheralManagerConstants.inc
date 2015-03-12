@@ -1,5 +1,4 @@
-{ Parsed from CoreBluetooth.framework (MacOSX10.10) CBPeripheralManagerConstants.h }
-{ Created on Sun Mar 8 1:48:05 2015 }
+{ Parsed from CoreBluetooth.framework CBPeripheralManagerConstants.h }
 
 {$ifdef EXTERNAL_SYMBOLS}
 var

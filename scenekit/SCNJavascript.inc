@@ -1,5 +1,4 @@
-{ Parsed from SceneKit.framework (MacOSX10.10) SCNJavascript.h }
-{ Created on Sun Mar 8 1:46:53 2015 }
+{ Parsed from SceneKit.framework SCNJavascript.h }
 
 {$if defined(JSC_OBJC_API_ENABLED)}
 {$ifdef FUNCTIONS}

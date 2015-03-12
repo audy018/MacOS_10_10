@@ -1,5 +1,4 @@
-{ Parsed from CoreMediaIO.framework (MacOSX10.10) CMIOHardwarePlugIn.h }
-{ Created on Sun Mar 8 1:47:37 2015 }
+{ Parsed from CoreMediaIO.framework CMIOHardwarePlugIn.h }
 
 {$if  not (defined(__CMIOHardwarePlugIn_h__))}
 

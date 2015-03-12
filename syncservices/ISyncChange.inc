@@ -1,5 +1,4 @@
-{ Parsed from SyncServices.framework (MacOSX10.10) ISyncChange.h }
-{ Created on Sun Mar 8 1:48:21 2015 }
+{ Parsed from SyncServices.framework ISyncChange.h }
 
 
 {$ifdef TYPES}

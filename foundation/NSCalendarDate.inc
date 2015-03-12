@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSCalendarDate.h }
-{ Created on Sun Mar 8 1:49:15 2015 }
+{ Parsed from Foundation.framework NSCalendarDate.h }
 
 
 {$ifdef TYPES}

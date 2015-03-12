@@ -1,5 +1,4 @@
-{ Parsed from CFOpenDirectory.framework (MacOSX10.10) CFOpenDirectoryConstants.h }
-{ Created on Sun Mar 8 1:48:45 2015 }
+{ Parsed from CFOpenDirectory.framework CFOpenDirectoryConstants.h }
 
 {$if  not (defined(__ODCONSTANTS_H))}
 {$ifdef EXTERNAL_SYMBOLS}

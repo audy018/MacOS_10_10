@@ -1,5 +1,4 @@
-{ Parsed from WebKit.framework (MacOSX10.10) WKFoundation.h }
-{ Created on Sun Mar 8 1:48:18 2015 }
+{ Parsed from WebKit.framework WKFoundation.h }
 
 {$if  not (defined(WK_API_ENABLED))}
 

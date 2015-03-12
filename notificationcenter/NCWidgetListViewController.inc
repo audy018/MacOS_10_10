@@ -1,5 +1,4 @@
-{ Parsed from NotificationCenter.framework (MacOSX10.10) NCWidgetListViewController.h }
-{ Created on Sun Mar 8 1:49:09 2015 }
+{ Parsed from NotificationCenter.framework NCWidgetListViewController.h }
 
 
 {$ifdef TYPES}

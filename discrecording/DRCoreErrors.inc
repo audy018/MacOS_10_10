@@ -1,5 +1,4 @@
-{ Parsed from DiscRecording.framework (MacOSX10.10) DRCoreErrors.h }
-{ Created on Sun Mar 8 1:47:42 2015 }
+{ Parsed from DiscRecording.framework DRCoreErrors.h }
 
 {$ifndef _H_DRCoreErrors}
 

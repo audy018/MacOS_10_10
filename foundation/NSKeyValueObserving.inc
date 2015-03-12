@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSKeyValueObserving.h }
-{ Created on Sun Mar 8 1:49:14 2 015 }
+{ Parsed from Foundation.framework NSKeyValueObserving.h }
 
 {$ifdef TYPES} 
 type

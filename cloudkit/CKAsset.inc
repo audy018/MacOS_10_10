@@ -1,5 +1,4 @@
-{ Parsed from CloudKit.framework (MacOSX10.10) CKAsset.h }
-{ Created on Sun Mar 8 1:49:12 2015 }
+{ Parsed from CloudKit.framework CKAsset.h }
 
 
 {$ifdef TYPES}

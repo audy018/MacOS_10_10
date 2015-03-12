@@ -1,5 +1,4 @@
-{ Parsed from SecurityInterface.framework (MacOSX10.10) SFKeychainSavePanel.h }
-{ Created on Sun Mar 8 1:48:24 2015 }
+{ Parsed from SecurityInterface.framework SFKeychainSavePanel.h }
 
 
 {$ifdef TYPES}

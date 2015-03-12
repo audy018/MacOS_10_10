@@ -1,5 +1,4 @@
-{ Parsed from Automator.framework (MacOSX10.10) AMWorkflowController.h }
-{ Created on Sun Mar 8 1:47:30 2015 }
+{ Parsed from Automator.framework AMWorkflowController.h }
 
 
 {$ifdef TYPES}

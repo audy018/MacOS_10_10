@@ -1,9 +1,21 @@
-{ Parsed from AppKit.framework (MacOSX10.10) NSTableView.h }
-{ Created on Sun Mar 8 1:49:08 2015 }
+{ Parsed from AppKit.framework NSTableView.h }
 
 
 { Types from NSTableView }
 {$ifdef TYPES}
+
+{$if (MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_7)}
+const
+  NSTableViewAnimationEffectNone = $0;
+const
+  NSTableViewAnimationEffectFade = $1;
+  NSTableViewAnimationEffectGap = $2;
+const
+  NSTableViewAnimationSlideUp = $10;
+  NSTableViewAnimationSlideDown = $20;
+  NSTableViewAnimationSlideLeft = $30;
+  NSTableViewAnimationSlideRight = $40;
+{$endif}
 
 type
   NSTableViewAnimationOptions = NSUInteger;

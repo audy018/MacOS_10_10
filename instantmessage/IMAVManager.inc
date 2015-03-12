@@ -1,5 +1,4 @@
-{ Parsed from InstantMessage.framework (MacOSX10.10) IMAVManager.h }
-{ Created on Sun Mar 8 1:48:48 2015 }
+{ Parsed from InstantMessage.framework IMAVManager.h }
 
 
 { Types from IMAVManager }

@@ -1,5 +1,4 @@
-{ Parsed from AddressBook.framework (MacOSX10.10) ABGlobals.h }
-{ Created on Sun Mar 8 1:47:29 2015 }
+{ Parsed from AddressBook.framework ABGlobals.h }
 
 {$ifdef EXTERNAL_SYMBOLS}
 var

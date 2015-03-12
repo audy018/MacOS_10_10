@@ -1,5 +1,4 @@
-{ Parsed from CoreAudioKit.framework (MacOSX10.10) AUPannerView.h }
-{ Created on Sun Mar 8 1:47:31 2015 }
+{ Parsed from CoreAudioKit.framework AUPannerView.h }
 
 
 {$ifdef TYPES}

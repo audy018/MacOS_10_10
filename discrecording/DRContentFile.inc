@@ -1,5 +1,4 @@
-{ Parsed from DiscRecording.framework (MacOSX10.10) DRContentFile.h }
-{ Created on Sun Mar 8 1:47:42 2015 }
+{ Parsed from DiscRecording.framework DRContentFile.h }
 
 {$ifndef _H_DRContentFile}
 

@@ -1,5 +1,4 @@
-{ Parsed from CFOpenDirectory.framework (MacOSX10.10) CFODSession.h }
-{ Created on Sun Mar 8 1:48:45 2015 }
+{ Parsed from CFOpenDirectory.framework CFODSession.h }
 
 {$if  not (defined(__OPENDIRECTORY_CFODSESSION__))}
 {$ifdef EXTERNAL_SYMBOLS}

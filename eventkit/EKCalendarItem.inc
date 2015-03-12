@@ -1,5 +1,4 @@
-{ Parsed from EventKit.framework (MacOSX10.10) EKCalendarItem.h }
-{ Created on Sun Mar 8 1:45:58 2015 }
+{ Parsed from EventKit.framework EKCalendarItem.h }
 
 
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from CalendarStore.framework (MacOSX10.10) CalEvent.h }
-{ Created on Sun Mar 8 1:47:31 2015 }
+{ Parsed from CalendarStore.framework CalEvent.h }
 
 
 {$ifdef TYPES}

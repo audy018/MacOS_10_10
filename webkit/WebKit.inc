@@ -1,3 +1,2 @@
-{ Parsed from WebKit.framework (MacOSX10.10) WebKit.h }
-{ Created on Sun Mar 8 1:48:18 2015 }
+{ Parsed from WebKit.framework WebKit.h }
 

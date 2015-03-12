@@ -192,7 +192,7 @@
 unit QuickLookUI;
 interface
 
-{$linkframework QuickLookUI}
+{$linkframework Quartz}
 
 uses
 {$ifdef COCOAALL}

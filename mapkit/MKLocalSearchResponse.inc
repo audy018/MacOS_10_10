@@ -1,5 +1,4 @@
-{ Parsed from MapKit.framework (MacOSX10.10) MKLocalSearchResponse.h }
-{ Created on Sun Mar 8 1:48:51 2015 }
+{ Parsed from MapKit.framework MKLocalSearchResponse.h }
 
 
 {$ifdef TYPES}

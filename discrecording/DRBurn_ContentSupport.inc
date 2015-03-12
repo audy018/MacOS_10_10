@@ -1,5 +1,4 @@
-{ Parsed from DiscRecording.framework (MacOSX10.10) DRBurn_ContentSupport.h }
-{ Created on Sun Mar 8 1:47:42 2015 }
+{ Parsed from DiscRecording.framework DRBurn_ContentSupport.h }
 
 {$ifdef CLASSES}
 

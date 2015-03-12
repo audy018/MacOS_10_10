@@ -1,5 +1,4 @@
-{ Parsed from WebKit.framework (MacOSX10.10) DOMHTMLTableCellElement.h }
-{ Created on Sun Mar 8 1:48:19 2015 }
+{ Parsed from WebKit.framework DOMHTMLTableCellElement.h }
 
 
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSExtensionContext.h }
-{ Created on Sun Mar 8 1:49:14 2015 }
+{ Parsed from Foundation.framework NSExtensionContext.h }
 
 {$if defined(__OBJC2__)defined(interface)defined(NSExtensionContext)defined(NSObject)}
 {$ifdef EXTERNAL_SYMBOLS}

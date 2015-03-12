@@ -1,5 +1,4 @@
-{ Parsed from ImageKit.framework (MacOSX10.10) IKImageView.h }
-{ Created on Sun Mar 8 1:47:45 2015 }
+{ Parsed from ImageKit.framework IKImageView.h }
 
 
 {$ifdef TYPES}

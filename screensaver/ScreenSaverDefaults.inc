@@ -1,5 +1,4 @@
-{ Parsed from ScreenSaver.framework (MacOSX10.10) ScreenSaverDefaults.h }
-{ Created on Sun Mar 8 1:48:47 2015 }
+{ Parsed from ScreenSaver.framework ScreenSaverDefaults.h }
 
 
 {$ifdef TYPES}

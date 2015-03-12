@@ -1,5 +1,4 @@
-{ Parsed from Accounts.framework (MacOSX10.10) ACError.h }
-{ Created on Sun Mar 8 1:45:55 2015 }
+{ Parsed from Accounts.framework ACError.h }
 
 {$ifdef EXTERNAL_SYMBOLS}
 var

@@ -1,5 +1,4 @@
-{ Parsed from WebKit.framework (MacOSX10.10) DOMObject.h }
-{ Created on Sun Mar 8 1:48:18 2015 }
+{ Parsed from WebKit.framework DOMObject.h }
 
 
 {$ifdef TYPES}

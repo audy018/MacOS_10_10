@@ -1,5 +1,4 @@
-{ Parsed from WebKit.framework (MacOSX10.10) DOMHTMLEmbedElement.h }
-{ Created on Sun Mar 8 1:48:19 2015 }
+{ Parsed from WebKit.framework DOMHTMLEmbedElement.h }
 
 
 {$ifdef TYPES}

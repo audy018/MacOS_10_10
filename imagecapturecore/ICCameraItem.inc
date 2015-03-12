@@ -1,5 +1,4 @@
-{ Parsed from ImageCaptureCore.framework (MacOSX10.10) ICCameraItem.h }
-{ Created on Sun Mar 8 1:47:45 2015 }
+{ Parsed from ImageCaptureCore.framework ICCameraItem.h }
 
 
 {$ifdef TYPES}

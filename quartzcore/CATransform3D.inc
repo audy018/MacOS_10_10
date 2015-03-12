@@ -1,5 +1,4 @@
-{ Parsed from QuartzCore.framework (MacOSX10.10) CATransform3D.h }
-{ Created on Sun Mar 8 1:48:55 2015 }
+{ Parsed from QuartzCore.framework CATransform3D.h }
 
 {$ifndef CATRANSFORM_H}
 
@@ -36,7 +35,6 @@ function CATransform3DIsAffine(t: CATransform3D): cbool; cdecl; external; { avai
 function CATransform3DGetAffineTransform(t: CATransform3D): CGAffineTransform; cdecl; external; { available starting in __MAC_10_5, __IPHONE_2_0 }
 {$endif}
 
-{$ifdef __OBJC__}
 {$ifdef CLASSES}
 
 type
@@ -46,5 +44,4 @@ type
   end;
 {$endif}
 
-{$endif}
 {$endif}

@@ -1,5 +1,4 @@
-{ Parsed from GameKit.framework (MacOSX10.10) GKLeaderboardSet.h }
-{ Created on Sun Mar 8 1:46:49 2015 }
+{ Parsed from GameKit.framework GKLeaderboardSet.h }
 
 
 { Types from GKLeaderboardSet_UI }

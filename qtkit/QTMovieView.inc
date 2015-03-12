@@ -1,5 +1,4 @@
-{ Parsed from QTKit.framework (MacOSX10.10) QTMovieView.h }
-{ Created on Sun Mar 8 1:48:37 2015 }
+{ Parsed from QTKit.framework QTMovieView.h }
 
 
 { Types from QTMovieView }

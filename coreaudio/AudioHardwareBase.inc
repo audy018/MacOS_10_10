@@ -1,5 +1,4 @@
-{ Parsed from CoreAudio.framework (MacOSX10.10) AudioHardwareBase.h }
-{ Created on Sun Mar 8 1:48:36 2015 }
+{ Parsed from CoreAudio.framework AudioHardwareBase.h }
 
 {$if  not (defined(__AudioHardwareBase_h__))}
 

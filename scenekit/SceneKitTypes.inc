@@ -1,5 +1,4 @@
-{ Parsed from SceneKit.framework (MacOSX10.10) SceneKitTypes.h }
-{ Created on Sun Mar 8 1:46:53 2015 }
+{ Parsed from SceneKit.framework SceneKitTypes.h }
 
 {$ifdef TYPES}
 type
@@ -45,7 +44,6 @@ function SCNMatrix4ToGLKMatrix4(mat: SCNMatrix4): GLKMatrix4; cdecl; external; {
 function SCNMatrix4FromGLKMatrix4(mat: GLKMatrix4): SCNMatrix4; cdecl; external; { available in 10_10, 8_0 }
 {$endif}
 
-{$ifdef __OBJC__}
 {$ifdef CLASSES}
 
 type
@@ -67,6 +65,4 @@ var
 {$ifdef TYPES}
 const
   SCNProgramCompilationError = 1;
-{$endif}
-
 {$endif}

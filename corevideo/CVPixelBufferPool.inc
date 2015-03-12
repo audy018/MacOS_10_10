@@ -1,5 +1,4 @@
-{ Parsed from CoreVideo.framework (MacOSX10.10) CVPixelBufferPool.h }
-{ Created on Sun Mar 8 1:48:48 2015 }
+{ Parsed from CoreVideo.framework CVPixelBufferPool.h }
 
 {$if  not (defined(__COREVIDEO__CVPIXELBUFFERPOOL_H__))}
 {$ifdef TYPES}

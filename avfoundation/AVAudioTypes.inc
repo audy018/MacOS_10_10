@@ -1,5 +1,4 @@
-{ Parsed from AVFoundation.framework (MacOSX10.10) AVAudioTypes.h }
-{ Created on Sun Mar 8 1:47:27 2015 }
+{ Parsed from AVFoundation.framework AVAudioTypes.h }
 
 {$ifndef __AVAudioTypes_h__}
 {$ifdef TYPES}

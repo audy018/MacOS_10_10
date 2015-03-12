@@ -1,5 +1,4 @@
-{ Parsed from DiscRecordingUI.framework (MacOSX10.10) DRBurnSetupPanel.h }
-{ Created on Sun Mar 8 1:47:42 2015 }
+{ Parsed from DiscRecordingUI.framework DRBurnSetupPanel.h }
 
 
 {$ifdef TYPES}

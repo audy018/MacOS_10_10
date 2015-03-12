@@ -195,7 +195,8 @@
 unit CoreImage;
 interface
 
-{$linkframework CoreImage}
+// CoreImage.framework is linked from QuartzCore.framework
+{$linkframework QuartzCore}
 
 uses
 {$ifdef COCOAALL}

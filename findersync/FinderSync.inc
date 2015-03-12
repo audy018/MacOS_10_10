@@ -1,5 +1,4 @@
-{ Parsed from FinderSync.framework (MacOSX10.10) FinderSync.h }
-{ Created on Sun Mar 8 1:48:57 2015 }
+{ Parsed from FinderSync.framework FinderSync.h }
 
 
 {$ifdef TYPES}

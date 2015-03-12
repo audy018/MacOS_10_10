@@ -1,5 +1,4 @@
-{ Parsed from QuartzCore.framework (MacOSX10.10) CACIFilterAdditions.h }
-{ Created on Sun Mar 8 1:48:55 2015 }
+{ Parsed from QuartzCore.framework CACIFilterAdditions.h }
 
 {$ifdef CLASSES}
 

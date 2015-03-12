@@ -1,5 +1,4 @@
-{ Parsed from CoreVideo.framework (MacOSX10.10) CVOpenGLBuffer.h }
-{ Created on Sun Mar 8 1:48:48 2015 }
+{ Parsed from CoreVideo.framework CVOpenGLBuffer.h }
 
 {$if  not (defined(__COREVIDEO_CVOPENGLBUFFER_H__))}
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from SecurityInterface.framework (MacOSX10.10) SFChooseIdentityPanel.h }
-{ Created on Sun Mar 8 1:48:23 2015 }
+{ Parsed from SecurityInterface.framework SFChooseIdentityPanel.h }
 
 
 {$ifdef TYPES}

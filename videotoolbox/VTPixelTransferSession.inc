@@ -1,5 +1,4 @@
-{ Parsed from VideoToolbox.framework (MacOSX10.10) VTPixelTransferSession.h }
-{ Created on Sun Mar 8 1:47:13 2015 }
+{ Parsed from VideoToolbox.framework VTPixelTransferSession.h }
 
 {$ifndef VTPIXELTRANSFERSESSION_H}
 

@@ -1,5 +1,4 @@
-{ Parsed from CoreAudio.framework (MacOSX10.10) HostTime.h }
-{ Created on Sun Mar 8 1:48:36 2015 }
+{ Parsed from CoreAudio.framework HostTime.h }
 
 {$if  not (defined(__HostTime_h__))}
 

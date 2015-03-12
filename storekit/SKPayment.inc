@@ -1,5 +1,4 @@
-{ Parsed from StoreKit.framework (MacOSX10.10) SKPayment.h }
-{ Created on Sun Mar 8 1:48:22 2015 }
+{ Parsed from StoreKit.framework SKPayment.h }
 
 
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from DiscRecordingUI.framework (MacOSX10.10) DiscRecordingUIResources.h }
-{ Created on Sun Mar 8 1:47:42 2015 }
+{ Parsed from DiscRecordingUI.framework DiscRecordingUIResources.h }
 
 {$ifdef EXTERNAL_SYMBOLS}
 var

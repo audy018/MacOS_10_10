@@ -1,5 +1,4 @@
-{ Parsed from AppKit.framework (MacOSX10.10) NSAlert.h }
-{ Created on Sun Mar 8 1:49:07 2015 }
+{ Parsed from AppKit.framework NSAlert.h }
 
 
 { Types from NSAlert }

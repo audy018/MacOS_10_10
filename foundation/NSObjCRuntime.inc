@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSObjCRuntime.h }
-{ Created on Sun Mar 8 1:49:14 2015 }
+{ Parsed from Foundation.framework NSObjCRuntime.h }
 
 {$if  not defined(__has_feature)}
 {$ifdef TYPES}

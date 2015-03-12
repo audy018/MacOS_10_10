@@ -1,5 +1,4 @@
-{ Parsed from VideoToolbox.framework (MacOSX10.10) VTErrors.h }
-{ Created on Sun Mar 8 1:47:13 2015 }
+{ Parsed from VideoToolbox.framework VTErrors.h }
 
 {$ifndef VTERRORS_H}
 

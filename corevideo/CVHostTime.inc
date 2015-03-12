@@ -1,5 +1,4 @@
-{ Parsed from CoreVideo.framework (MacOSX10.10) CVHostTime.h }
-{ Created on Sun Mar 8 1:48:48 2015 }
+{ Parsed from CoreVideo.framework CVHostTime.h }
 
 {$if  not (defined(__COREVIDEO_CVHOSTTIME_H__))}
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from ScriptingBridge.framework (MacOSX10.10) SBElementArray.h }
-{ Created on Sun Mar 8 1:48:47 2015 }
+{ Parsed from ScriptingBridge.framework SBElementArray.h }
 
 
 {$ifdef TYPES}

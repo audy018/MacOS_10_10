@@ -1,5 +1,4 @@
-{ Parsed from SecurityFoundation.framework (MacOSX10.10) SFAuthorization.h }
-{ Created on Sun Mar 8 1:48:23 2015 }
+{ Parsed from SecurityFoundation.framework SFAuthorization.h }
 
 
 {$ifdef TYPES}

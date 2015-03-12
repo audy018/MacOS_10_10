@@ -1,5 +1,4 @@
-{ Parsed from AppleScriptObjC.framework (MacOSX10.10) AppleScriptObjC.h }
-{ Created on Sun Mar 8 1:47:28 2015 }
+{ Parsed from AppleScriptObjC.framework AppleScriptObjC.h }
 
 {$ifdef CLASSES}
 

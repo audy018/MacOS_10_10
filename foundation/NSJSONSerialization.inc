@@ -1,5 +1,4 @@
-{ Parsed from Foundation.framework (MacOSX10.10) NSJSONSerialization.h }
-{ Created on Sun Mar 8 1:49:14 2015 }
+{ Parsed from Foundation.framework NSJSONSerialization.h }
 
 
 {$ifdef TYPES}

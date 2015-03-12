@@ -1,5 +1,4 @@
-{ Parsed from QTKit.framework (MacOSX10.10) QTCaptureView.h }
-{ Created on Sun Mar 8 1:48:37 2015 }
+{ Parsed from QTKit.framework QTCaptureView.h }
 
 
 {$ifdef TYPES}

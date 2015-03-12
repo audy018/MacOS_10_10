@@ -1,5 +1,4 @@
-{ Parsed from PDFKit.framework (MacOSX10.10) PDFPage.h }
-{ Created on Sun Mar 8 1:47:48 2015 }
+{ Parsed from PDFKit.framework PDFPage.h }
 
 
 { Types from PDFPage }

@@ -1,5 +1,4 @@
-{ Parsed from QuartzCore.framework (MacOSX10.10) CAScrollLayer.h }
-{ Created on Sun Mar 8 1:48:55 2015 }
+{ Parsed from QuartzCore.framework CAScrollLayer.h }
 
 
 {$ifdef TYPES}

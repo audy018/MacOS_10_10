@@ -1,5 +1,4 @@
-{ Parsed from GameController.framework (MacOSX10.10) GCGamepad.h }
-{ Created on Sun Mar 8 1:48:49 2015 }
+{ Parsed from GameController.framework GCGamepad.h }
 
 
 { Types from GCGamepad }

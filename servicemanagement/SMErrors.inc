@@ -1,5 +1,4 @@
-{ Parsed from ServiceManagement.framework (MacOSX10.10) SMErrors.h }
-{ Created on Sun Mar 8 1:48:22 2015 }
+{ Parsed from ServiceManagement.framework SMErrors.h }
 
 {$ifndef __SERVICE_MANAGEMENT_ERRORS__}
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from IOBluetooth.framework (MacOSX10.10) IOBluetoothUserLib.h }
-{ Created on Sun Mar 8 1:48:07 2015 }
+{ Parsed from IOBluetooth.framework IOBluetoothUserLib.h }
 
 {$ifdef TYPES}
 type

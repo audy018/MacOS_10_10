@@ -1,5 +1,4 @@
-{ Parsed from AVKit.framework (MacOSX10.10) AVPlayerView.h }
-{ Created on Sun Mar 8 1:48:48 2015 }
+{ Parsed from AVKit.framework AVPlayerView.h }
 
 
 { Types from AVPlayerView }

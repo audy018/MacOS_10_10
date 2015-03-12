@@ -1,5 +1,4 @@
-{ Parsed from AppKit.framework (MacOSX10.10) NSTitlebarAccessoryViewController.h }
-{ Created on Sun Mar 8 1:49:09 2015 }
+{ Parsed from AppKit.framework NSTitlebarAccessoryViewController.h }
 
 
 {$ifdef TYPES}

@@ -1,5 +1,4 @@
-{ Parsed from CoreImage.framework (MacOSX10.10) CIRAWFilter.h }
-{ Created on Sun Mar 8 1:47:45 2015 }
+{ Parsed from CoreImage.framework CIRAWFilter.h }
 
 {$ifdef CLASSES}
 

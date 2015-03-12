@@ -1,5 +1,4 @@
-{ Parsed from CryptoTokenKit.framework (MacOSX10.10) TKError.h }
-{ Created on Sun Mar 8 1:48:58 2015 }
+{ Parsed from CryptoTokenKit.framework TKError.h }
 
 {$ifdef EXTERNAL_SYMBOLS}
 var

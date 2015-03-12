@@ -1,5 +1,4 @@
-{ Parsed from EventKit.framework (MacOSX10.10) EKReminder.h }
-{ Created on Sun Mar 8 1:45:58 2015 }
+{ Parsed from EventKit.framework EKReminder.h }
 
 
 {$ifdef TYPES}

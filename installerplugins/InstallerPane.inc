@@ -1,5 +1,4 @@
-{ Parsed from InstallerPlugins.framework (MacOSX10.10) InstallerPane.h }
-{ Created on Sun Mar 8 1:48:47 2015 }
+{ Parsed from InstallerPlugins.framework InstallerPane.h }
 
 
 {$ifdef TYPES}

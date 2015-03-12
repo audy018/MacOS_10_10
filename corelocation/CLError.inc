@@ -1,5 +1,4 @@
-{ Parsed from CoreLocation.framework (MacOSX10.10) CLError.h }
-{ Created on Sun Mar 8 1:49:12 2015 }
+{ Parsed from CoreLocation.framework CLError.h }
 
 {$ifdef TYPES}
 type

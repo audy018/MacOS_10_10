@@ -1,5 +1,4 @@
-{ Parsed from Accounts.framework (MacOSX10.10) ACAccountCredential.h }
-{ Created on Sun Mar 8 1:45:55 2015 }
+{ Parsed from Accounts.framework ACAccountCredential.h }
 
 
 {$ifdef TYPES}

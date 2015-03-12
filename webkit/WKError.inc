@@ -1,5 +1,4 @@
-{ Parsed from WebKit.framework (MacOSX10.10) WKError.h }
-{ Created on Sun Mar 8 1:48:18 2015 }
+{ Parsed from WebKit.framework WKError.h }
 
 {$if defined(WK_API_ENABLED)}
 {$ifdef EXTERNAL_SYMBOLS}

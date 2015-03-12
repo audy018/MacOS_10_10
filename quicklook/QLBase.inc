@@ -1,5 +1,4 @@
-{ Parsed from QuickLook.framework (MacOSX10.10) QLBase.h }
-{ Created on Sun Mar 8 1:48:24 2015 }
+{ Parsed from QuickLook.framework QLBase.h }
 
 {$if  not (defined(__QUICKLOOK_QLBASE__))}
 

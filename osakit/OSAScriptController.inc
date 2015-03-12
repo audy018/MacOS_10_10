@@ -1,5 +1,4 @@
-{ Parsed from OSAKit.framework (MacOSX10.10) OSAScriptController.h }
-{ Created on Sun Mar 8 1:47:30 2015 }
+{ Parsed from OSAKit.framework OSAScriptController.h }
 
 
 {$ifdef TYPES}

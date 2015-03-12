@@ -1,5 +1,4 @@
-{ Parsed from AudioVideoBridging.framework (MacOSX10.10) AVBMACAddress.h }
-{ Created on Sun Mar 8 1:45:56 2015 }
+{ Parsed from AudioVideoBridging.framework AVBMACAddress.h }
 
 
 {$ifdef TYPES}

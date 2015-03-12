@@ -1,5 +1,4 @@
-{ Parsed from MapKit.framework (MacOSX10.10) MKPinAnnotationView.h }
-{ Created on Sun Mar 8 1:48:51 2015 }
+{ Parsed from MapKit.framework MKPinAnnotationView.h }
 
 
 {$ifdef TYPES}
