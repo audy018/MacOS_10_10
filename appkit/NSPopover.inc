@@ -39,7 +39,7 @@ type
 	_NSAppearanceCustomizationProtocol = NSAppearanceCustomizationProtocol;
 {$else}
 type
-	NSPopoverAppearanceCustomizationProtocol = objcprotocol(NSPopoverAppearanceCustomizationProtocol)
+	NSPopoverAppearanceCustomizationProtocol = objcprotocol(NSObjectProtocol)
 	end;
 type
 	_NSAppearanceCustomizationProtocol = NSPopoverAppearanceCustomizationProtocol;

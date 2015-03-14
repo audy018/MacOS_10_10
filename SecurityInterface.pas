@@ -3,6 +3,9 @@
 {$modeswitch cvar}
 
 {$macro on}
+
+{$define instancetype := id}
+
 {$ifndef LOADED_AVAILABILITY_MACROS}
 {$define LOADED_AVAILABILITY_MACROS}
 
@@ -17,7 +20,7 @@
 {$define MAC_OS_X_VERSION_10_7 := 1070}
 {$define MAC_OS_X_VERSION_10_8 := 1080}
 {$define MAC_OS_X_VERSION_10_9 := 1090}
-{$define MAC_OS_X_VERSION_10_10 := 1100}
+{$define MAC_OS_X_VERSION_10_10 := 101000}
 {$define MAC_OS_X_VERSION_LATEST := MAC_OS_X_VERSION_10_10}
 
 // System Versions iPhoneOS SDK

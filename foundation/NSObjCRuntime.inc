@@ -1,6 +1,6 @@
 { Parsed from Foundation.framework NSObjCRuntime.h }
 
-{$if  not defined(__has_feature)}
+{$if not defined(instancetype)}
 {$ifdef TYPES}
 type
   instancetype = id;
