@@ -39,7 +39,7 @@ const
 type
   NSWorkspace = objcclass external (NSObject)
   private
-    notificationCenter: NSNotificationCenter;
+    _notificationCenter: NSNotificationCenter;
     {$if  not defined(__LP64__)}
     deviceStatusCount: cint;
     applicationStatusCount: cint;
@@ -47,7 +47,7 @@ type
     {$endif}
   public
     class function sharedWorkspace: NSWorkspace; message 'sharedWorkspace';
-    function notificationCenter_: NSNotificationCenter; message 'notificationCenter';
+    function notificationCenter: NSNotificationCenter; message 'notificationCenter';
     function openFile (fullPath: NSString): boolean; message 'openFile:';
     function openFile_withApplication (fullPath: NSString; appName: NSString): boolean; message 'openFile:withApplication:';
     function openFile_withApplication_andDeactivate (fullPath: NSString; appName: NSString; flag: boolean): boolean; message 'openFile:withApplication:andDeactivate:';
