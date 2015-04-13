@@ -546,9 +546,21 @@ type
 {$endif}
 
 {$ifdef TYPES}
+const
+  NSTerminateCancel = 0;
+  NSTerminateNow = 1;
+  NSTerminateLater = 2;
+
 type
   NSApplicationTerminateReply = NSUInteger;
   NSApplicationTerminateReplyPtr = ^NSApplicationTerminateReply;
+
+const
+  NSPrintingCancelled = 0;
+  NSPrintingSuccess = 1;
+  NSPrintingFailure = 3;
+  NSPrintingReplyLater = 2;
+
   NSApplicationPrintReply = NSUInteger;
   NSApplicationPrintReplyPtr = ^NSApplicationPrintReply;
 {$endif}
