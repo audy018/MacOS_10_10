@@ -561,6 +561,7 @@ const
   NSPrintingFailure = 3;
   NSPrintingReplyLater = 2;
 
+type
   NSApplicationPrintReply = NSUInteger;
   NSApplicationPrintReplyPtr = ^NSApplicationPrintReply;
 {$endif}
